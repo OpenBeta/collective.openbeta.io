@@ -1,0 +1,68 @@
+{
+  "name": "openbeta-landing-page",
+  "description": "OpenBeta project",
+  "version": "1.0.0",
+  "author": "@openbetahq",
+  "dependencies": {
+    "@fontsource/lato": "^4.5.0",
+    "@fontsource/open-sans": "^4.5.0",
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "@tailwindcss/typography": "^0.4.1",
+    "@tippyjs/react": "^4.2.5",
+    "gatsby": "^3.12.0",
+    "gatsby-plugin-image": "^1.10.1",
+    "gatsby-plugin-mailchimp": "^5.2.2",
+    "gatsby-plugin-manifest": "^3.7.1",
+    "gatsby-plugin-mdx": "^2.10.1",
+    "gatsby-plugin-offline": "^4.7.1",
+    "gatsby-plugin-page-creator": "^3.13.0",
+    "gatsby-plugin-postcss": "^4.7.1",
+    "gatsby-plugin-react-helmet": "^4.7.1",
+    "gatsby-plugin-react-svg": "^3.0.1",
+    "gatsby-plugin-sharp": "^3.10.2",
+    "gatsby-remark-images": "^5.10.0",
+    "gatsby-remark-twitter-cards": "^0.6.1",
+    "gatsby-source-filesystem": "^3.5.0",
+    "gatsby-transformer-sharp": "^3.10.0",
+    "path": "^0.12.7",
+    "postcss-import": "^14.0.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "6.1.0",
+    "slugify": "^1.6.0",
+    "validate.js": "^0.13.1"
+  },
+  "keywords": [
+    "rock climbing",
+    "open data"
+  ],
+  "license": "CC-BY-4.0",
+  "scripts": {
+    "analyze": "eslint --ext .jsx --ext .js .",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.15.0",
+    "@babel/plugin-proposal-decorators": "^7.14.5",
+    "@tailwindcss/forms": "^0.3.3",
+    "autoprefixer": "^10.2.6",
+    "babel-preset-gatsby": "^1.7.1",
+    "cssnano": "^5.0.6",
+    "eslint": "^7.27.0",
+    "postcss": "^8.3.5",
+    "prettier": "^2.3.1",
+    "tailwindcss": "^2.2.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OpenBeta/open-tacos"
+  },
+  "bugs": {
+    "url": "https://github.com/OpenBeta/open-tacos/issues"
+  }
+}

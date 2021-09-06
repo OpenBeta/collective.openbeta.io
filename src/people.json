@@ -1,0 +1,39 @@
+[
+    {
+        "fname": "Haden",
+        "lname": "Bricker",
+        "role": "Director of Marketing",
+        "email": "hadenb@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/hadenbricker/"
+    },
+    {
+        "fname": "Adelore",
+        "lname": "Lessard",
+        "role": "Business development",
+        "email": "adelorelessard@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/adelorelessard"
+    },
+    {
+        "fname": "Viet",
+        "lname": "Nguyen",
+        "role": "Founder, Software development",
+        "email": "viet@openbeta.io",
+        "linkedin": "https://www.linkedin.com/in/viethnguyen/"
+    },
+    {
+        "fname": "Kevin",
+        "lname": "Nadro",
+        "role": "Software development",
+        "email": "kevin.nadro@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/nadro/",
+        "website": "https://kevinnadro.com/"
+    },
+    {
+        "fname": "Ryther",
+        "lname": "Anderson",
+        "academic_title": "PhD",
+        "role": "Data scientist",
+        "email": "rytheranderson@gmail.com",
+        "website": "https://scholar.google.com/citations?user=kbL7G8QAAAAJ&hl=en"
+    }
+]

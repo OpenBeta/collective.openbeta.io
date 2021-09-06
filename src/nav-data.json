@@ -1,0 +1,58 @@
+{
+    "nav": [
+        {
+            "route": "/",
+            "title": "Home"
+        },
+        {
+            "route": "/why",
+            "title": "Why OpenBeta"
+        },
+        {
+            "title": "Community",
+            "popover": "true",
+            "key": "community"
+        },
+        {
+            "route": "/get-involved",
+            "title": "Get involved"
+        },
+        {
+            "route": "https://opencollective.com/openbeta",
+            "title": "Donate now",
+            "emphasis": true
+        }
+    ],
+    "community": [
+        {
+            "route": "https://openbeta.substack.com",
+            "title": "Blog",
+            "description": "Tutorials, coding examples, and important annoucements."
+        },
+        {
+            "route": "https://github.com/openbeta",
+            "title": "GitHub Repo",
+            "description": "Download climbing dataset.  Check out the source code behind our projects."
+        },
+        {
+            "route": "https://trello.com/b/Ir8emiyR/openbeta-project",
+            "title": "Public Roadmap",
+            "description": "Follow the development and make suggestions for what features you would like to see in the future."
+        },
+        {
+            "route": "https://discord.gg/a5HskjmqPc",
+            "title": "Discord chat server",
+            "description": "Chat with our volunteers and climbers who code."
+        },
+        {
+            "route": "https://community.openbeta.io",
+            "title": "Forum",
+            "description": "Community message board."
+        },
+        {
+            "route": "/about",
+            "title": "About us",
+            "description": "Learn more about the people behind the project."
+        }
+    ]
+}
