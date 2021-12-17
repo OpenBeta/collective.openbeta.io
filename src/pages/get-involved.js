@@ -49,7 +49,7 @@ export default function Why() {
           <h3>Four primary ways you can get involved:</h3>
           <ul>
             <li>
-              Help improve the catalog content, write descriptions for your
+              Help improve the <a href="https://tacos.openbeta.io">climbing catalog</a>, write descriptions for your
               favorite climbing areas, and make corrections to a climb/boulder.
             </li>
             <li>

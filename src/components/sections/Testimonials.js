@@ -4,7 +4,7 @@ import Quote from '../../assets/icons/quote.svg';
 
 export default function Testimonials() {
   return (
-    <section className="my-16 layout-center layout-wide flex flex-col md:flex-row md:items-start gap-x-16 gap-y-8">
+    <section className="my-16 layout-center layout-wide flex flex-col md:flex-row md:items-start space-x-16 space-y-8">
       <div>
         <Quote className="w-12 h-12 fill-current text-gray-400" />
       </div>

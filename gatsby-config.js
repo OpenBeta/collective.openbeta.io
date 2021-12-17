@@ -9,7 +9,7 @@ module.exports = {
     description: `Open source rock climbing platform`,
     author: `support@openbeta.io`,
     url: `https://openbeta.io`,
-    image: `/openbeta-logo-white-sm.png`,
+    image: `/images/social-card-bg.png`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -66,7 +66,7 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-page-creator",
+      resolve: 'gatsby-plugin-page-creator',
       options: {
         path: `${__dirname}/src/mdx-pages`,
       },

@@ -78,11 +78,27 @@ const name_comparator = (a, b) => {
 };
 
 const People = () => (
-  <div className="mt-8 grid grid-flow-rows grid-cols-1 md:grid-cols-2 auto-rows-auto	gap-x-8 gap-y-12">
-    {people.sort(name_comparator).map((entry) => (
-      <Profile key={entry.fname + entry.lname} {...entry} />
-    ))}
-  </div>
+  <>
+    <div className="mt-8 grid grid-flow-rows grid-cols-1 md:grid-cols-2 auto-rows-auto gap-x-8 gap-y-8">
+      {people
+        .filter((entry) => entry.active !== 'false')
+        .sort(name_comparator)
+        .map((entry) => (
+          <Profile key={entry.fname + entry.lname} {...entry} />
+        ))}
+    </div>
+    <div className="mt-8 text-lg font-bold">Former volunteers</div>
+    <div className="mt-4 grid grid-flow-rows grid-cols-1 md:grid-cols-2 auto-rows-auto gap-x-8 gap-y-4">
+      {people
+        .filter((entry) => entry.active === 'false')
+        .sort(name_comparator)
+        .map(({ fname, lname, academic_title }) => (
+          <div className="text-base" key={fname + lname}>{`${fname} ${lname}${
+            academic_title ? `, ${academic_title}` : ''
+          }`}</div>
+        ))}
+    </div>
+  </>
 );
 
 const Profile = ({
@@ -94,7 +110,7 @@ const Profile = ({
   linkedin,
   website,
 }) => (
-  <div className="text-base flex flex-col gap-y-2">
+  <div className="text-base flex flex-col space-y-2">
     <div className="text-lg font-bold">
       {`${fname} ${lname}${academic_title ? `, ${academic_title}` : ''}`}
     </div>
@@ -102,7 +118,7 @@ const Profile = ({
     <a className="text-gray-500 link-default text-sm" href={`mailto:${email}`}>
       {email}
     </a>
-    <div className="flex text-sm gap-x-4">
+    <div className="flex text-sm space-x-4">
       {website && (
         <a className="hover:underline" href={website}>
           Website

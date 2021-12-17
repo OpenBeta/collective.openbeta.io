@@ -1,29 +1,15 @@
 [
     {
-        "fname": "Haden",
-        "lname": "Bricker",
-        "role": "Director of Marketing",
-        "email": "hadenb@gmail.com",
-        "linkedin": "https://www.linkedin.com/in/hadenbricker/"
-    },
-    {
-        "fname": "Adelore",
-        "lname": "Lessard",
-        "role": "Business development",
-        "email": "adelorelessard@gmail.com",
-        "linkedin": "https://www.linkedin.com/in/adelorelessard"
-    },
-    {
         "fname": "Viet",
         "lname": "Nguyen",
-        "role": "Founder, Software development",
+        "role": "Founder, Software Development",
         "email": "viet@openbeta.io",
         "linkedin": "https://www.linkedin.com/in/viethnguyen/"
     },
     {
         "fname": "Kevin",
         "lname": "Nadro",
-        "role": "Software development",
+        "role": "Software Development",
         "email": "kevin.nadro@gmail.com",
         "linkedin": "https://www.linkedin.com/in/nadro/",
         "website": "https://kevinnadro.com/"
@@ -32,8 +18,39 @@
         "fname": "Ryther",
         "lname": "Anderson",
         "academic_title": "PhD",
-        "role": "Data scientist",
+        "role": "Data Scientist",
         "email": "rytheranderson@gmail.com",
         "website": "https://scholar.google.com/citations?user=kbL7G8QAAAAJ&hl=en"
+    },
+    {
+        "fname": "Yannick",
+        "lname": "Gingras",
+        "role": "Senior Advisor",
+        "email": "ygingras@ygingras.net",
+        "website": "http://ygingras.net/",
+        "linkedin": "https://www.linkedin.com/in/ygingras/"
+    },
+    {
+        "fname": "Chloé",
+        "lname": "Beaulieu",
+        "role": "Graphic Design",
+        "website": "https://creativechlo.myportfolio.com/work",
+        "linkedin": "https://www.linkedin.com/in/chlo%C3%A9-beaulieu-0481b41a3/",
+        "email": "chloebeaulieu@hotmail.com"
+    },
+    {
+        "fname": "Adam",
+        "lname": "Marcus",
+        "active": "false"
+    },
+    {
+        "fname": "Haden",
+        "lname": "Bricker",
+        "active": "false"
+    },
+    {
+        "fname": "Adelore",
+        "lname": "Lessard",
+        "active": "false"
     }
 ]
