@@ -12,7 +12,7 @@ function Header({ bgColor = 'bg-gray-50' }) {
   const [isExpanded, toggleExpansion] = useState(false);
   const location = useLocation();
   return (
-    <header className={`w-full mx-auto py-2 z-auto py-3 border-2 ${bgColor}}`}>
+    <header className={`w-full mx-auto py-2 z-auto py-3 h-20 ${bgColor}}`}>
       <div className="flex flex-wrap items-center justify-between max-w-4xl  px-2 mx-auto">
         <Link to="/">
           <h1 className="flex items-center no-underline">
@@ -106,7 +106,7 @@ const IconButton = ({
     <div
       ref={innerRef}
       className={`flex items-center	cursor-pointer border-transparent hover:border-custom-primary border rounded ${
-        emphasis ? 'md:mx-4 bg-custom-blue' : ''
+        emphasis ? 'md:mx-4 bg-openbeta-orange text-openbeta-white' : ''
       }`}
     >
       {popover && (

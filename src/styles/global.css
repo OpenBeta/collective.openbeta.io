@@ -127,3 +127,47 @@ input[type="radio"]:checked {
 .default-layout {
   @apply w-full max-w-4xl mx-auto;
 }
+
+
+/* OpenBeta Styles */
+
+.bg-openbeta-orange {
+  background-color: #F15E40;
+}
+
+.bg-openbeta-green {
+  background-color: #B1C077;
+}
+
+.bg-openbeta-dark-turquoise {
+  background-color: #2F6A6C;
+}
+
+.bg-openbeta-black {
+  background-color: #000000;
+}
+
+.bg-openbeta-white {
+  background-color: #FFFFFF;
+}
+
+
+.text-openbeta-orange {
+  color: #F15E40;
+}
+
+.text-openbeta-green {
+  color: #B1C077;
+}
+
+.text-openbeta-dark-turquoise {
+  color: #2F6A6C;
+}
+
+.text-openbeta-black {
+  color: #000000;
+}
+
+.text-openbeta-white {
+  color: #FFFFFF;
+}
