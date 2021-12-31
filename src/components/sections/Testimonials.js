@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Quote from '../../assets/icons/quote.svg';
+import Quote from '../../assets/icons/quote.inline.svg';
 
 export default function Testimonials() {
   return (

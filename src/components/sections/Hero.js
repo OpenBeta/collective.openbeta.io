@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import ArrowRight from '../../assets/icons/arrow-right.svg';
+import ArrowRight from '../../assets/icons/arrow-right.inline.svg';
 
 export default function Hero() {
   return (

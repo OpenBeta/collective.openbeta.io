@@ -1,13 +1,10 @@
 {
     "nav": [
         {
-            "route": "/",
-            "title": "Home"
-        },
-        {
             "route": "/why",
             "title": "Why OpenBeta"
         },
+        
         {
             "title": "Community",
             "popover": "true",
@@ -18,8 +15,16 @@
             "title": "Get involved"
         },
         {
+            "route": "/get-involved",
+            "title": "About us"
+        },
+        {
+            "route": "https://tacos.openbeta.io/",
+            "title": "OpenTaco"
+        },
+        {
             "route": "https://opencollective.com/openbeta",
-            "title": "Donate now",
+            "title": "Donate",
             "emphasis": true
         }
     ],

@@ -5,7 +5,7 @@ import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import  MadeWithOB from "../components/sections/MadeWithOB"
 import Subscribe from '../components/Subscribe';
-import Pin from '../assets/icons/pin.svg';
+import Pin from '../assets/icons/pin.inline.svg';
 import WhyDevCTA from '../components/sections/WhyDevCTA';
 
 export default function Why() {

@@ -4,8 +4,8 @@ import { useLocation } from '@reach/router';
 import Tippy from '@tippyjs/react/headless';
 
 import Logo from '../assets/openbeta-logo.png';
-import Close from '../assets/icons/x.svg';
-import ChevronDown from '../assets/icons/chevron-down.svg';
+import Close from '../assets/icons/x.inline.svg';
+import ChevronDown from '../assets/icons/chevron-down.inline.svg';
 import NavData from "../nav-data.json";
 
 function Header({ bgColor = 'bg-gray-50' }) {
