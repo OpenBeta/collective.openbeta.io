@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import { useLocation } from '@reach/router';
 import Tippy from '@tippyjs/react/headless';
 
-import Logo from '../assets/openbeta-logo.png';
+import Logo from '../assets/icons/logo-2022.inline.svg';
 import Close from '../assets/icons/x.inline.svg';
 import ChevronDown from '../assets/icons/chevron-down.inline.svg';
 import NavData from "../nav-data.json";
@@ -13,14 +13,13 @@ function Header({ bgColor = 'bg-gray-50' }) {
   const location = useLocation();
   return (
     <header className={`w-full mx-auto py-2 z-auto py-3 h-20 ${bgColor}}`}>
-      <div className="flex flex-wrap items-center justify-between max-w-4xl  px-2 mx-auto">
+      <div className="flex flex-wrap items-center justify-between max-w-6xl  px-2 mx-auto">
         <Link to="/">
           <h1 className="flex items-center no-underline">
-            <img
-              className="z-50 w-12 h-12 rounded-full border border-custom-primary bg-custom-blue bg-opacity-60 backdrop-filter p-2"
-              src={Logo}
-            />
+            <Logo/>          
+            <h1 className="font-black text-openbeta-orange ml-3 text-4xl">OpenBeta</h1>
           </h1>
+
         </Link>
         <button
           className="z-50 items-center block px-3 py-2 text-gray-900 border rounded md:hidden"
@@ -92,6 +91,9 @@ const IconButton = ({
   pathname,
   popover,
 }) => {
+
+  const isDontationButton = emphasis;
+
   const Child = (
     <div
       className={`text-lg no-underline ${
@@ -106,7 +108,7 @@ const IconButton = ({
     <div
       ref={innerRef}
       className={`flex items-center	cursor-pointer border-transparent hover:border-custom-primary border rounded ${
-        emphasis ? 'md:mx-4 bg-openbeta-orange text-openbeta-white' : ''
+        isDontationButton ? 'md:mx-4 bg-openbeta-orange text-openbeta-white h-10 w-36 justify-center' : ''
       }`}
     >
       {popover && (
@@ -116,7 +118,7 @@ const IconButton = ({
         </div>
       )}
       {route && route.startsWith('http') ? (
-        <a className="px-4 py-2" href={route}>
+        <a className="px-4 py-1.5" href={route}>
           {Child}
         </a>
       ) : (

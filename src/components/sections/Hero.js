@@ -1,11 +1,23 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 import ArrowRight from '../../assets/icons/arrow-right.inline.svg';
 
 export default function Hero() {
   return (
     <div className="">
-      <section className="layout-center py-16 md:pt-36 md:mb-24 ">
+      <section className="layout-center">
+        <StaticImage
+            className="z-0 max-h-624"
+            src="../../assets/heros/home-climbing-res.jpg"
+            alt="Something"
+            layout="fullWidth"
+            placeholder="blurred"
+            quality="80"
+            style={{
+              gridArea: '1/1',
+            }}
+        />
         <h1 className="text-center text-5xl md:text-7xl pb-4 font-display font-black md:font-bold tracking-tight text-gray-800">
           A fair, free <br />
           and open future
@@ -24,17 +36,6 @@ export default function Hero() {
             Learn more <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
         </div>
-      </section>
-      <section className="layout-center layout-wide">
-        {/* <BrowserWindow className="opacity-70 from-black via-black to-gray-800">
-            <StaticImage
-              src="../../assets/usa-heatmap.png"
-              alt="Heatmap of climbing areas in the US"
-              layout="fullWidth"
-              placeholder="blurred"
-              quality="90"
-            />
-        </BrowserWindow> */}
       </section>
     </div>
   );

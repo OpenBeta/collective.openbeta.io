@@ -26,7 +26,7 @@ module.exports = {
         'Consolas',
         'Liberation Mono',
         'Courier New',
-        'monospace',
+        'monospace'
       ],
       sans: [
         'Open Sans',
