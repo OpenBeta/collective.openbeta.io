@@ -29,6 +29,7 @@ module.exports = {
         'monospace'
       ],
       sans: [
+        'ISO',
         'Open Sans',
         'ui-sans-serif',
         'system-ui',

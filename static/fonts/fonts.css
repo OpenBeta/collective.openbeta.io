@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "ISO10";
+  src: url("VCTR-Mono-v0.10-Thin.woff2") format('woff2');
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "ISO";
+  src: url("VCTR-Mono-v0.10-Light.woff2") format('woff2');
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "ISO";
+  src: url("VCTR-Mono-v0.10-Regular.woff2") format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "ISO";
+  src: url("VCTR-Mono-v0.10-RegularItalic.woff2") format('woff2');
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "ISO";
+  src: url("VCTR-Mono-v0.10-Medium.woff2") format('woff2');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "ISO";
+  src: url("VCTR-Mono-v0.10-MediumItalic.woff2") format('woff2');
+  font-style: italic;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "ISO";
+  src: url("VCTR-Mono-v0.10-Bold.woff2") format('woff2');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "ISO";
+  src: url("VCTR-Mono-v0.10-BoldItalic.woff2") format('woff2');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "ISO";
+  src: url("VCTR-Mono-v0.10-Black.woff2") format('woff2');
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "ISO";
+  src: url("VCTR-Mono-v0.10-BlackItalic.woff2") format('woff2');
+  font-style: normal;
+  font-weight: 900;
+}

@@ -80,6 +80,15 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        custom: {
+          families: ['ISO'],
+          urls: ['/fonts/fonts.css']
+        }
+      }
+    },
+    {
       resolve: `gatsby-plugin-mailchimp`,
       options: {
         endpoint:
