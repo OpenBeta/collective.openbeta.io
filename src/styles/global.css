@@ -133,6 +133,22 @@ input[type="radio"]:checked {
   max-height: 39rem;
 }
 
+.max-w-1240 {
+  max-width: 77.5rem;
+}
+
+.w-1240 {
+  width: 77.5rem;
+}
+
+.mt-30	{
+  margin-top: 7.5rem;
+}
+
+.font-open-sans {
+  font-family: 'Open Sans';
+}
+
 /* OpenBeta Styles */
 
 .bg-openbeta-orange {

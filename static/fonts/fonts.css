@@ -30,14 +30,14 @@
   font-family: "ISO";
   src: url("VCTR-Mono-v0.10-Medium.woff2") format('woff2');
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 @font-face {
   font-family: "ISO";
   src: url("VCTR-Mono-v0.10-MediumItalic.woff2") format('woff2');
   font-style: italic;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 @font-face {
@@ -50,7 +50,7 @@
 @font-face {
   font-family: "ISO";
   src: url("VCTR-Mono-v0.10-BoldItalic.woff2") format('woff2');
-  font-style: normal;
+  font-style: italic;
   font-weight: 700;
 }
 
@@ -64,6 +64,6 @@
 @font-face {
   font-family: "ISO";
   src: url("VCTR-Mono-v0.10-BlackItalic.woff2") format('woff2');
-  font-style: normal;
+  font-style: italic;
   font-weight: 900;
 }

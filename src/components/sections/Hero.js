@@ -6,7 +6,7 @@ import ArrowRight from '../../assets/icons/arrow-right.inline.svg';
 export default function Hero() {
   return (
     <div className="">
-      <section className="layout-center">
+      <section className="layout-center relative">
         <StaticImage
             className="z-0 max-h-624"
             src="../../assets/heros/home-climbing-res.jpg"
@@ -18,23 +18,25 @@ export default function Hero() {
               gridArea: '1/1',
             }}
         />
-        <h1 className="text-center text-5xl md:text-7xl pb-4 font-display font-black md:font-bold tracking-tight text-gray-800">
-          A fair, free <br />
-          and open future
-        </h1>
-        <div className="mx-auto max-w-xl mt-4 flex flex-col justify-center items-center px-4">
-          <h3 className="text-center text-2xl text-gray-600 font-sans">
-            Built and run by climbers. OpenBeta is a nonprofit initiative that
-            enables <span className="text-red-500">open access </span> and{' '}
-            <span className="text-red-500">innovative</span> uses of data about
-            rock climbing routes.
-          </h3>
-          <Link
-            className="btn btn-link mt-8 btn btn-primary pl-8 pr-6 py-4 flex items-center"
-            to="/why"
-          >
-            Learn more <ArrowRight className="ml-2 h-4 w-4" />
-          </Link>
+        <div className="absolute mt-30 top-0 left-0 right-0 flex flex-col flex-wrap items-center justify-between max-w-1240 w-1240 px-2 mx-auto">
+          <h1 className="self-start text-7xl md:text-7xl pb-4 font-black md:font-bold tracking-tight text-openbeta-white">
+            A fair, free <br />
+            and open future
+          </h1>
+          <div className="self-start max-w-xl flex flex-col justify-center items-center">
+            <h3 className="text-left text-2xl text-openbeta-white font-open-sans">
+              Built and run by climbers. OpenBeta is a nonprofit initiative that
+              enables <span className="font-extrabold">open access </span> and{' '}
+              <span className="font-extrabold">innovative</span> uses of data about
+              rock climbing routes.
+            </h3>
+            <Link
+              className="self-start btn btn-link w-48 h-14 mt-12 btn btn-primary text-center leading-10 bg-openbeta-orange"
+              to="/why"
+            >
+              Learn more
+            </Link>
+          </div>
         </div>
       </section>
     </div>

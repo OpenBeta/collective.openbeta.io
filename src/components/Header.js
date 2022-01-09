@@ -12,8 +12,8 @@ function Header({ bgColor = 'bg-gray-50' }) {
   const [isExpanded, toggleExpansion] = useState(false);
   const location = useLocation();
   return (
-    <header className={`w-full mx-auto py-2 z-auto py-3 h-20 ${bgColor}}`}>
-      <div className="flex flex-wrap items-center justify-between max-w-6xl  px-2 mx-auto">
+    <header className={`flex w-full mx-auto py-2 z-auto py-3 h-28 ${bgColor}`}>
+      <div className="flex flex-wrap items-center justify-between max-w-1240 w-1240 px-2 mx-auto">
         <Link to="/">
           <h1 className="flex items-center no-underline">
             <Logo/>          
@@ -107,7 +107,7 @@ const IconButton = ({
   return (
     <div
       ref={innerRef}
-      className={`flex items-center	cursor-pointer border-transparent hover:border-custom-primary border rounded ${
+      className={`flex items-center	cursor-pointer border-transparent hover:border-custom-primary border rounded font-medium ${
         isDontationButton ? 'md:mx-4 bg-openbeta-orange text-openbeta-white h-10 w-36 justify-center' : ''
       }`}
     >
