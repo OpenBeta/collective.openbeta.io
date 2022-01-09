@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import Hero from '../components/sections/Hero';
 import Testimonials from '../components/sections/Testimonials';
+import HowToGetInvolved from '../components/sections/HowToGetInvolved';
 
 export default function IndexPage() {
   return (
@@ -13,6 +14,7 @@ export default function IndexPage() {
       />
       <Hero />
       <Testimonials/>
+      <HowToGetInvolved/>
     </Layout>
   );
 }
