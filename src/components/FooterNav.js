@@ -11,7 +11,7 @@ export default function FooterNav(props) {
           const list = NavData[entry.key];
           return (
             <div key={entry.title} className="">
-              <div className="text-gray-400">{entry.title}</div>
+              <div>{entry.title}</div>
               <div className="pl-4 md:pl-0 mt-2 flex flex-col space-y-2">
                 {list.map((entry) => (
                   <SmartLink key={entry.route} {...entry} />

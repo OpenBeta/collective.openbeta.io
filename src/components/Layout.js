@@ -10,11 +10,11 @@ function Layout({ extraClz, bgColor = 'bg-current', children }) {
 
       <main className="">{children}</main>
 
-      <footer className="bg-gray-900">
-        <nav className="flex justify-between max-w-5xl p-4 mx-auto text-sm text-white">
+      <footer className="bg-openbeta-dark-turquoise">
+        <nav className="flex justify-between max-w-5xl mx-auto text-sm text-white">
           <FooterNav />
-          <span className="text-gray-400">CC-BY-SA 2021 OpenBeta</span>
         </nav>
+        <span className="">CC-BY-SA 2021 OpenBeta</span>
       </footer>
     </div>
   );
