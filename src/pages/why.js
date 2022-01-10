@@ -3,8 +3,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
-import  MadeWithOB from "../components/sections/MadeWithOB"
-import Subscribe from '../components/Subscribe';
+import MadeWithOB from "../components/sections/MadeWithOB"
 import Pin from '../assets/icons/pin.inline.svg';
 import WhyDevCTA from '../components/sections/WhyDevCTA';
 

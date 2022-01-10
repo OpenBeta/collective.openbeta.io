@@ -8,7 +8,7 @@ export default function Hero() {
       <section className="layout-center relative">
         <StaticImage
             className="z-0 max-h-624"
-            src="../../assets/heros/home-climbing-res.jpg"
+            src="../../assets/heros/home-climbing.png"
             alt="Something"
             layout="fullWidth"
             placeholder="blurred"
