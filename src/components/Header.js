@@ -51,7 +51,6 @@ function Header({ bgColor = 'bg-gray-50' }) {
                   key={entry.title}
                   interactive={true}
                   trigger="click"
-                  // className="border"
                   placement="bottom"
                   render={(attrs) => (
                     <PopoverContent
@@ -107,7 +106,7 @@ const IconButton = ({
   return (
     <div
       ref={innerRef}
-      className={`flex items-center	cursor-pointer border-transparent hover:border-custom-primary border rounded font-normal ${
+      className={`nav-link flex items-center	cursor-pointer border-transparent hover:border-custom-primary border rounded font-normal ${
         isDontationButton ? 'bg-openbeta-orange text-openbeta-white h-10 w-32 justify-center' : ''
       }`}
     >

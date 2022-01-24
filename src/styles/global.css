@@ -191,3 +191,8 @@ input[type="radio"]:checked {
 .text-openbeta-white {
   color: #FFFFFF;
 }
+
+/* Specific Layout */
+.nav-link:nth-child(5n) {
+  margin-right: 0.5rem; 
+}
