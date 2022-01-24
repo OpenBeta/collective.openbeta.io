@@ -4,7 +4,7 @@ import NavData from '../nav-data.json';
 
 export default function FooterNav(props) {
   return (
-    <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+    <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-end mt-12">
       {NavData.nav.map((entry) => {
         if (entry.route === '/') return null;
         if (entry.popover) {
@@ -29,7 +29,7 @@ export default function FooterNav(props) {
 
 const SmartLink = ({ title, route, emphasis, pathname, popover }) => {
   return (
-    <div className={emphasis ? 'font-bold' : ''}>
+    <div className={emphasis ? 'btn btn-link w-32 h-9 text-center bg-openbeta-orange' : ''}>
       {route.startsWith('http') ? (
         <a href={route}>{title}</a>
       ) : (

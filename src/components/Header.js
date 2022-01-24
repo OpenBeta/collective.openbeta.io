@@ -12,7 +12,7 @@ function Header({ bgColor = 'bg-gray-50' }) {
   const [isExpanded, toggleExpansion] = useState(false);
   const location = useLocation();
   return (
-    <header className={`flex w-full mx-auto py-2 z-auto py-3 h-28 ${bgColor}`}>
+    <header className={`flex mx-auto py-2 z-auto py-3 h-28 ${bgColor}`}>
       <div className="flex flex-wrap items-center justify-between max-w-1240 w-1240 px-2 mx-auto">
         <Link to="/">
           <h1 className="flex items-center no-underline">
