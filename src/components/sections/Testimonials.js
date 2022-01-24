@@ -12,12 +12,13 @@ export default function Testimonials() {
   );
 }
 
+
 const Card = ({ text, author, title }) => (
-  <div className="w-5/12">
-    <div className="text-lg font-semibold">{text}</div>
-    <div className="flex flex-col mt-16 items-end">
-      <div className="">— {author}</div>
-      <div className="">— {title}</div>
+  <div className="w-5/12 font-open-sans">
+    <q className="text-testimonials h-7 font-normal leading-8">{text}</q>
+    <div className="flex flex-col mt-12 items-end">
+      <div className="text-2xl">— {author}</div>
+      <div className="text-2xl">{title}</div>
     </div>
   </div>
 );
@@ -26,11 +27,11 @@ const quotes = [
   {
     text: 'Just as climbing should be open to everyone. The knowledge of these great experiences should be open to anyone willing to learn.',
     author: 'Brody Lowe',
-    title: 'FILL THIS IN'
+    title: 'title'
   },
   {
     text: 'OpenBeta summed up my thoughts extremely well. I believe the data that was curated by the community should stay open to community use.',
     author: 'Raymond Fiscus',
-    title: 'FILL THIS IN'
+    title: 'title'
   },
 ];
