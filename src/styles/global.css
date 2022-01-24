@@ -196,3 +196,7 @@ input[type="radio"]:checked {
 .nav-link:nth-child(5n) {
   margin-right: 0.5rem; 
 }
+
+.h-13 {
+  height: 3.25rem;
+}

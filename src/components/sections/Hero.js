@@ -23,14 +23,14 @@ export default function Hero() {
             and open future
           </h1>
           <div className="self-start max-w-xl flex flex-col justify-center items-center">
-            <h3 className="text-left text-2xl text-openbeta-white font-open-sans">
+            <h3 className="text-left text-2xl text-openbeta-white font-open-sans leading-9 font-normal">
               Built and run by climbers. OpenBeta is a nonprofit initiative that
               enables <span className="font-extrabold">open access </span> and{' '}
               <span className="font-extrabold">innovative</span> uses of data about
               rock climbing routes.
             </h3>
             <Link
-              className="self-start btn btn-link w-48 h-14 mt-12 btn btn-primary text-center leading-10 bg-openbeta-orange"
+              className="self-start btn btn-link w-48 h-13 mt-12 btn btn-primary text-center leading-10 bg-openbeta-orange font-normal text-lg"
               to="/why"
             >
               Learn more
