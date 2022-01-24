@@ -17,7 +17,7 @@ function Header({ bgColor = 'bg-gray-50' }) {
         <Link to="/">
           <h1 className="flex items-center no-underline">
             <Logo/>          
-            <h1 className="font-black text-openbeta-orange ml-3 text-4xl">OpenBeta</h1>
+            <h1 className="font-black text-openbeta-orange ml-3 text-4xl mt-2.5">OpenBeta</h1>
           </h1>
 
         </Link>
@@ -40,7 +40,7 @@ function Header({ bgColor = 'bg-gray-50' }) {
         </button>
 
         <nav
-          className={`z-50 text-sm ${
+          className={`z-50 text-sm items-center mt-2.5 ${
             isExpanded ? `block bg-gray-50` : `hidden`
           }  md:flex md:justify-end w-full md:w-auto  `}
         >
@@ -107,23 +107,23 @@ const IconButton = ({
   return (
     <div
       ref={innerRef}
-      className={`flex items-center	cursor-pointer border-transparent hover:border-custom-primary border rounded font-medium ${
-        isDontationButton ? 'md:mx-4 bg-openbeta-orange text-openbeta-white h-10 w-36 justify-center' : ''
+      className={`flex items-center	cursor-pointer border-transparent hover:border-custom-primary border rounded font-normal ${
+        isDontationButton ? 'bg-openbeta-orange text-openbeta-white h-10 w-32 justify-center' : ''
       }`}
     >
       {popover && (
-        <div className="px-4 py-2 flex items-center">
+        <div className="px-6 py-2 flex items-center">
           {Child}
           <ChevronDown className="ml-2 w-4 h-4" />
         </div>
       )}
       {route && route.startsWith('http') ? (
-        <a className="px-4 py-1.5" href={route}>
+        <a className="px-6 py-1.5" href={route}>
           {Child}
         </a>
       ) : (
         route && (
-          <Link className="px-4 py-2" to={route}>
+          <Link className="px-6 py-2" to={route}>
             {Child}
           </Link>
         )
