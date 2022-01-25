@@ -14,8 +14,8 @@ export default function Testimonials() {
 
 
 const Card = ({ text, author, title }) => (
-  <div className="w-5/12 font-open-sans">
-    <q className="text-testimonials h-7 font-normal leading-8">{text}</q>
+  <div className="w-5/12">
+    <q className="text-testimonials h-7 font-normal leading-8 font-open-sans">{text}</q>
     <div className="flex flex-col mt-12 items-end">
       <div className="text-2xl">— {author}</div>
       <div className="text-2xl">{title}</div>

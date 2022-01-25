@@ -15,7 +15,7 @@ export default function LatestBlogArticle() {
           placeholder="blurred"
           quality="90"
         />
-        <div className="flex flex-col mt-12 ml-14 w-1/2 self-start">
+        <div className="flex flex-col mt-12 pl-14 w-1/2 self-start">
           <h3 className="font-bold text-3xl">Latest blog article</h3>
           <h1 className="font-open-sans text-5xl mt-4 w-3/5">Estimating Route Quality: Analysis and Applications</h1>
           <Link
