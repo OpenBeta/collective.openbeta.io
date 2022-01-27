@@ -4,14 +4,13 @@ export default function Testimonials() {
   return (
     <section className="flex bg-openbeta-dark-turquoise">
       <div className='max-w-1240 w-1240 px-2 mx-auto my-24 layout-center layout-wide flex flex-col md:flex-row md:items-start text-openbeta-white justify-between'>
-        {quotes.map((entry) => (
-          <Card {...entry} />
+        {quotes.map((entry, index) => (
+          <Card key={index} {...entry} />
         ))}
       </div>
     </section>
   );
 }
-
 
 const Card = ({ text, author, title }) => (
   <div className="w-5/12">

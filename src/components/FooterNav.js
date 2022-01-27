@@ -27,7 +27,7 @@ export default function FooterNav(props) {
   );
 }
 
-const SmartLink = ({ title, route, emphasis, pathname, popover }) => {
+const SmartLink = ({ title, route, emphasis }) => {
   return (
     <div className={emphasis ? 'btn btn-link w-32 h-9 text-center bg-openbeta-orange' : ''}>
       {route.startsWith('http') ? (

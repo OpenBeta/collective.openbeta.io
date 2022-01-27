@@ -12,15 +12,16 @@ function Header({ bgColor = 'bg-gray-50' }) {
   const [isExpanded, toggleExpansion] = useState(false);
   const location = useLocation();
   return (
-    <header className={`flex z-auto py-3 h-28 ${bgColor}`}>
-      <div className="flex items-center justify-between w-1240 mx-auto">
+    <header className={`w-full mx-auto py-2 z-auto py-3 border-2 ${bgColor}`}>
+      <div className="flex flex-wrap items-center justify-between max-w-7xl px-2 mx-auto">
+        
         <Link to="/">
           <h1 className="flex items-center no-underline">
             <Logo/>          
             <h1 className="font-black text-openbeta-orange ml-3 text-4xl mt-2.5">OpenBeta</h1>
           </h1>
-
         </Link>
+
         <button
           className="z-50 items-center block px-3 py-2 text-gray-900 border rounded md:hidden"
           onClick={() => toggleExpansion(!isExpanded)}

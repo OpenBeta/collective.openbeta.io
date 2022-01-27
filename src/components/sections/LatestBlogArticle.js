@@ -17,9 +17,9 @@ export default function LatestBlogArticle() {
         />
         <div className="flex flex-col mt-12 pl-14 w-1/2 self-start">
           <h3 className="font-bold text-3xl">Latest blog article</h3>
-          <h1 className="font-open-sans text-5xl mt-4 w-3/5">Estimating Route Quality: Analysis and Applications</h1>
+          <h1 className="font-open-sans text-5xl mt-4 w-3/5 leading-blog-article-title">Estimating Route Quality: Analysis and Applications</h1>
           <Link
-            className="btn btn-link w-32 h-9 mt-12 btn btn-primary text-center bg-openbeta-orange"
+            className="btn btn-link w-36 h-10 mt-12 btn btn-primary text-center bg-openbeta-orange"
               to="https://openbeta.substack.com/p/estimating-route-quality-analysis"
           >
           Read more
