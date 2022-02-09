@@ -3,25 +3,20 @@ import { Link } from 'gatsby';
 import { useLocation } from '@reach/router';
 import Tippy from '@tippyjs/react/headless';
 
-import Logo from '../assets/icons/logo-2022.inline.svg';
 import Close from '../assets/icons/x.inline.svg';
 import ChevronDown from '../assets/icons/chevron-down.inline.svg';
 import NavData from "../nav-data.json";
 
+import HeaderLogo from './header/logo';
+
 function Header({ bgColor = 'bg-gray-50' }) {
   const [isExpanded, toggleExpansion] = useState(false);
   const location = useLocation();
-  return (
-    <header className={`w-full mx-auto py-2 z-auto py-3 border-2 ${bgColor}`}>
-      <div className="flex flex-wrap items-center justify-between max-w-7xl px-2 mx-auto">
-        
-        <Link to="/">
-          <h1 className="flex items-center no-underline">
-            <Logo/>          
-            <h1 className="font-black text-openbeta-orange ml-3 text-4xl mt-2.5">OpenBeta</h1>
-          </h1>
-        </Link>
 
+  return (
+    <header className={`w-full mx-auto py-2 z-auto py-3 ${bgColor}`}>
+      <div className="flex flex-wrap items-center justify-between max-w-7xl px-2 mx-auto">
+        <HeaderLogo></HeaderLogo>
         <button
           className="z-50 items-center block px-3 py-2 text-gray-900 border rounded md:hidden"
           onClick={() => toggleExpansion(!isExpanded)}
