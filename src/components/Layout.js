@@ -13,7 +13,7 @@ function Layout({ extraClz, bgColor = 'bg-current', children }) {
       <main className="">{children}</main>
 
       <footer className="bg-openbeta-dark-turquoise">
-        <nav className="flex max-w-5xl mx-auto text-sm text-white max-w-1240 w-1240 flex-col">
+        <nav className="flex max-w-5xl mx-auto text-sm text-white flex-col">
           <div className="flex flex-row justify-between mt-12">
             <LogoLarge />
             <FooterNav />

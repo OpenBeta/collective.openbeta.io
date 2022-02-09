@@ -5,7 +5,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 export default function Hero() {
   return (
     <div className="">
-      <section className="layout-center relative">
+      <section className="layout-center">
         <StaticImage
             className="z-0 max-h-624"
             src="../../assets/heros/home-climbing.png"
@@ -17,7 +17,7 @@ export default function Hero() {
               gridArea: '1/1',
             }}
         />
-        <div className="absolute mt-30 top-0 left-0 right-0 flex flex-col flex-wrap items-center justify-between max-w-1240 w-1240 px-2 mx-auto">
+        <div className="absolute mt-30 top-0 left-0 right-0 flex flex-col flex-wrap items-center justify-between px-2 mx-auto max-w-7xl">
           <h1 className="self-start text-7xl md:text-7xl pb-4 font-black md:font-bold tracking-tight text-openbeta-white">
             A fair, free <br />
             and open future

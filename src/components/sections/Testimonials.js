@@ -3,7 +3,7 @@ import React from 'react';
 export default function Testimonials() {
   return (
     <section className="flex bg-openbeta-dark-turquoise">
-      <div className='max-w-1240 w-1240 px-2 mx-auto my-24 layout-center layout-wide flex flex-col md:flex-row md:items-start text-openbeta-white justify-between'>
+      <div className='max-w-7xl mx-auto flex flex-row justify-between my-24 text-openbeta-white'>
         {quotes.map((entry, index) => (
           <Card key={index} {...entry} />
         ))}
