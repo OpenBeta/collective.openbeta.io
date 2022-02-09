@@ -9,7 +9,7 @@ import NavData from "../nav-data.json";
 
 import HeaderLogo from './header/logo';
 
-function Header({ bgColor = 'bg-gray-50' }) {
+function Header({ bgColor = 'bg-white' }) {
   const [isExpanded, toggleExpansion] = useState(false);
   const location = useLocation();
 
@@ -17,6 +17,7 @@ function Header({ bgColor = 'bg-gray-50' }) {
     <header className={`w-full mx-auto py-2 z-auto py-3 ${bgColor}`}>
       <div className="flex flex-wrap items-center justify-between max-w-7xl px-2 mx-auto">
         <HeaderLogo></HeaderLogo>
+
         <button
           className="z-50 items-center block px-3 py-2 text-gray-900 border rounded md:hidden"
           onClick={() => toggleExpansion(!isExpanded)}
@@ -37,7 +38,7 @@ function Header({ bgColor = 'bg-gray-50' }) {
 
         <nav
           className={`z-50 text-sm items-center mt-2.5 ${
-            isExpanded ? `block bg-gray-50` : `hidden`
+            isExpanded ? `block bg-white` : `hidden`
           }  md:flex md:justify-end w-full md:w-auto  `}
         >
           {NavData.nav.map((entry) => {
@@ -67,6 +68,7 @@ function Header({ bgColor = 'bg-gray-50' }) {
             return (
               <IconButton
                 key={entry.title}
+                isExpanded={isExpanded}
                 pathname={location.pathname}
                 {...entry}
               />
@@ -85,6 +87,7 @@ const IconButton = ({
   emphasis,
   pathname,
   popover,
+  isExpanded
 }) => {
 
   const isDontationButton = emphasis;
@@ -102,9 +105,9 @@ const IconButton = ({
   return (
     <div
       ref={innerRef}
-      className={`nav-link flex items-center	cursor-pointer border-transparent hover:border-custom-primary border rounded font-normal ${
+      className={`nav-link flex items-center cursor-pointer border-transparent hover:border-custom-primary border rounded font-normal ${
         isDontationButton ? 'bg-openbeta-orange text-openbeta-white h-10 w-32 justify-center' : ''
-      }`}
+      } ${isExpanded ? 'w-full text-left justify-start': '' }`}
     >
       {popover && (
         <div className="px-6 py-2 flex items-center">
