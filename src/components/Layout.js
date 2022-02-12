@@ -20,7 +20,7 @@ function Layout({ extraClz, bgColor = 'bg-current', children }) {
             <FooterNav />
           </div>
           <SocialIcons/>
-          <span className="pt-1.5 mt-14 mb-14 border-t border-white font-open-sans text-lg">CC-BY-SA 2021 OpenBeta</span>
+          <span className="pt-1.5 mt-2.5 mb-14 border-t border-white font-open-sans text-lg">CC-BY-SA 2021 OpenBeta</span>
         </nav>
       </footer>
     </div>
