@@ -3,6 +3,7 @@ import React from 'react';
 import Header from './Header';
 import FooterNav from './FooterNav';
 import LogoLarge from '../assets/icons/logo-2022-large.inline.svg';
+import SocialIcons from './SocialIcons';
 
 
 function Layout({ extraClz, bgColor = 'bg-current', children }) {
@@ -18,7 +19,8 @@ function Layout({ extraClz, bgColor = 'bg-current', children }) {
             <LogoLarge />
             <FooterNav />
           </div>
-          <span className="pt-1.5 mt-14 mb-14 border-t border-white">CC-BY-SA 2021 OpenBeta</span>
+          <SocialIcons/>
+          <span className="pt-1.5 mt-14 mb-14 border-t border-white font-open-sans text-lg">CC-BY-SA 2021 OpenBeta</span>
         </nav>
       </footer>
     </div>
