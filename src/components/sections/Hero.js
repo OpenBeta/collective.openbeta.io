@@ -29,7 +29,7 @@ export default function Hero() {
           }}
         >
           <div className="max-w-7xl text-white text-left">
-            <h1 className="self-start xs:text-5xl md:text-7xl pb-4 font-black md:font-bold tracking-tight text-openbeta-white xs:py-12 xs:px-8 md:px-0 ">
+            <h1 className="self-start xs:text-5xl md:text-7xl pb-4 font-bold tracking-tight text-openbeta-white xs:py-12 xs:px-8 md:px-0 ">
               A fair, free <br />
               and open future
             </h1>
@@ -41,7 +41,7 @@ export default function Hero() {
             </div>
             <div className=" xs:px-8 xs:pb-16 md:px-0 md:pb-0">
               <Link
-                className="self-start py-4 px-12 btn btn-link text-center leading-10 bg-openbeta-orange font-normal text-lg"
+                className="self-start py-4 px-12 btn btn-link text-center leading-10 bg-openbeta-orange xs:font-medium md:font-normal xs:text-2xl md:text-lg"
                 to="/why"
               >
                 Learn more
