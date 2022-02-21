@@ -13,7 +13,7 @@ export default function HowToGetInvolved() {
           <h3 className="text-3xl mt-4  xs:text-left md:text-center font-open-sans"> OpenBeta is an open source project, and you can help!</h3>
         </div>
 
-        <div className="flex md:flex-row md:py-20 md:items-center md:w-full md:justify-between">
+        <div className="md:flex-row md:py-20 md:items-center md:w-full md:justify-between xs:hidden md:flex">
           <div className="flex flex-1 md:text-center md:items-center flex-col">
             <Computer/>
             <div className="font-open-sans text-xl pt-5">
@@ -36,12 +36,14 @@ export default function HowToGetInvolved() {
           </div>
 
         </div>
-        <Link
-          className="py-4 px-12 rounded text-openbeta-white text-center xs:font-medium md:font-normal xs:text-2xl md:text-lg leading-10 bg-openbeta-green"
-          to="/join"
-        >
-          Learn more
-        </Link>  
+        <div className="xs:pt-12 md:p-0">
+          <Link
+            className="py-6 px-12 rounded text-openbeta-white text-center xs:font-medium md:font-normal xs:text-2xl md:text-lg leading-10 bg-openbeta-green"
+            to="/join"
+          >
+            Join Today
+          </Link>  
+        </div>
       </div>
     </section>
   );
