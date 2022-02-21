@@ -14,7 +14,7 @@ function Header({ bgColor = 'bg-white' }) {
   const location = useLocation();
 
   return (
-    <header className={`w-full mx-auto py-2 z-auto py-3 ${bgColor} ssm:py-8`}>
+    <header className={`w-full mx-auto z-auto md:py-7 ${bgColor} xs:py-8 xs:px-3`}>
       <div className="flex flex-wrap items-center justify-between max-w-7xl px-2 mx-auto">
         <HeaderLogo></HeaderLogo>
 
