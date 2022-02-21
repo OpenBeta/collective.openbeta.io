@@ -5,7 +5,7 @@ import NavData from '../nav-data.json';
 const titleStyles = "font-bold text-lg leading-10";
 export default function FooterNav(props) {
   return (
-    <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-7 justify-end mt-12">
+    <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-7 justify-end mt-12 xs:hidden md:flex">
       {NavData.nav.map((entry) => {
         if (entry.route === '/') return null;
         if (entry.popover) {

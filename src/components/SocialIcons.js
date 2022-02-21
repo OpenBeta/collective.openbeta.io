@@ -7,7 +7,7 @@ import Twitter from "../assets/icons/twitter.inline.svg";
 
 function socialIcons () {
   return (
-    <div className="flex  justify-end">
+    <div className="flex xs:justify-center md:justify-end">
       <div className="flex flex-row items-center w-48 justify-between">
         <a href="https://github.com/OpenBeta"><Github/></a>
         <a href="https://www.instagram.com/openbetaproject/"><Instagram/></a>
