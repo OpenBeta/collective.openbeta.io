@@ -37,7 +37,7 @@ export default function LatestBlogArticle() {
       <div className="" style={{ display: 'grid' }}>
         <StaticImage
           className="z-0"
-          src="../../assets/heros/article-image.png"
+          src="../../assets/heros/bouldering-hero.jpg"
           alt=""
           layout="fullWidth"
           placeholder="blurred"
@@ -56,7 +56,7 @@ export default function LatestBlogArticle() {
             display: 'grid',
           }}
         >
-          <div className="max-w-7xl text-white text-center px-8 pt-20 pb-6 bg-openbeta-dark-turquoise-opactiy">
+          <div className="max-w-7xl text-white text-center px-8 pt-20 pb-6 bg-openbeta-dark-turquoise-opactiy h-full">
             <h3 className="font-bold text-3xl">
               Latest blog article
             </h3>
