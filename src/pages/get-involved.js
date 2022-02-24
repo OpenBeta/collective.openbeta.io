@@ -12,7 +12,7 @@ export default function Why() {
         keywords={[`rock climbing`, `openbeta`, `free climbing api`]}
         title="How to get involved"
       />
-      <div className="-mt-20" style={{ display: 'grid' }}>
+      <div className="-mt-32" style={{ display: 'grid' }}>
         <StaticImage
           className="z-0"
           src="../assets/heros/indian-creek.jpg"

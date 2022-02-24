@@ -6,7 +6,7 @@ import LogoLarge from '../assets/icons/logo-2022-large.inline.svg';
 import SocialIcons from './SocialIcons';
 
 
-function Layout({ extraClz, bgColor = 'bg-current', children }) {
+function Layout({ extraClz, bgColor = 'bg-openbeta-white', children }) {
   return (
     <div className={`main-container ${extraClz}`}>
       <Header bgColor={bgColor} />

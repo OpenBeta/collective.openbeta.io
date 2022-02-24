@@ -5,11 +5,9 @@ import LogoWithText from "../../assets/icons/logo-text-header.inline.svg";
 
 function headerLogo () {
   return (
-    <Link to="/">
-      <h1 className="flex items-center no-underline">
+    <Link className="z-50" to="/">
+      <h1 className="flex items-center no-underline z-50">
         <LogoWithText/>
-        {/* <Logo/>          
-        <h1 className="font-black text-openbeta-orange ml-3 text-4xl mt-2.5">OpenBeta</h1> */}
       </h1>
     </Link>
   )

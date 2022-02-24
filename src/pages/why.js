@@ -15,7 +15,7 @@ export default function Why() {
         keywords={[`rock climbing`, `openbeta`, `free climbing api`]}
         title="Why OpenBeta"
       />
-      <div className="-mt-20" style={{ display: 'grid' }}>
+      <div className="-mt-32" style={{ display: 'grid' }}>
         <StaticImage
           className="z-0"
           src="../assets/mohammad-alizade-bg.jpeg"
