@@ -9,11 +9,16 @@ export default function LatestBlogArticle() {
       <div className='flex-row text-openbeta-black justify-between items-center xs:hidden md:flex'>
         <StaticImage
           className="w-1/2"
-          src="../../assets/heros/article-image.png"
+          src="../../assets/heros/bouldering-hero.jpg"
           alt=""
           layout="fullWidth"
           placeholder="blurred"
           quality="90"
+          objectFit='cover'
+          objectPosition='50% 75%'
+          style={{
+            maxHeight: '750px'
+          }}
         />
         <div className="flex flex-col mt-12 pl-14 w-1/2 self-start">
           <h3 className="font-bold text-3xl">Latest blog article</h3>

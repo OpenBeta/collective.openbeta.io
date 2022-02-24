@@ -9,13 +9,16 @@ export default function Hero() {
         <div className="" style={{ display: 'grid' }}>
         <StaticImage
           className="z-0"
-          src="../../assets/heros/home-climbing.png"
+          src="../../assets/heros/hero-zebra.jpg"
           alt="Climbers walking in Indian Creek, Utah"
           layout="fullWidth"
           placeholder="blurred"
           quality="80"
+          objectFit='cover'
+          objectPosition='50% 85%'
           style={{
             gridArea: '1/1',
+            maxHeight: 'calc(100vh - 114px)'
           }}
         />
         <div
@@ -24,12 +27,11 @@ export default function Hero() {
             gridArea: '1/1',
             position: 'relative',
             // This centers the other elements inside the hero component
-            placeItems: 'center',
             display: 'grid',
           }}
         >
-          <div className="max-w-7xl text-white text-left">
-            <h1 className="self-start xs:text-5xl md:text-7xl pb-4 font-bold tracking-tight text-openbeta-white xs:py-12 xs:px-8 md:px-0 ">
+          <div className="mx-auto max-w-7xl text-white text-left">
+            <h1 className="self-start xs:text-5xl md:text-7xl pb-4 font-bold tracking-tight text-openbeta-white xs:py-12 xs:px-8 md:px-0 md:py-24">
               A fair, free <br />
               and open future
             </h1>
