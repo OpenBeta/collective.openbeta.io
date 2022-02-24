@@ -39,7 +39,7 @@ export default function HowToGetInvolved() {
         <div className="xs:pt-12 md:p-0">
           <Link
             className="py-6 px-12 rounded text-openbeta-white text-center xs:font-medium md:font-normal xs:text-2xl md:text-lg leading-10 bg-openbeta-green"
-            to="/join"
+            to="/get-involved"
           >
             Join Today
           </Link>  
