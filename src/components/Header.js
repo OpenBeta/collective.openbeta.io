@@ -37,9 +37,9 @@ function Header({ bgColor = 'bg-white' }) {
         </button>
 
         <nav
-          className={`z-50 text-sm items-center mt-2.5 ${
-            isExpanded ? `block bg-white` : `hidden`
-          }  md:flex md:justify-end w-full md:w-auto  `}
+          className={`z-50 text-sm items-center ${
+            isExpanded ? `block bg-white text-openbeta-orange text-2xl mt-10` : `hidden  mt-2.5`
+          }  md:flex md:justify-end w-full md:w-auto`}
         >
           {NavData.nav.map((entry) => {
             if (entry.popover) {
@@ -58,6 +58,7 @@ function Header({ bgColor = 'bg-white' }) {
                 >
                   <IconButtonRef
                     pathname={location.pathname}
+                    isExpanded={isExpanded}
                     {...entry}
                     popover={true}
                   />
@@ -94,9 +95,10 @@ const IconButton = ({
 
   const Child = (
     <div
-      className={`text-lg no-underline ${
+      className={`no-underline ${
         route === pathname ? 'border-b-2 border-gray-500' : ''
-      }`}
+      } ${isExpanded ? 'text-2xl' : 'text-lg'}`
+    }
     >
       {title}
     </div>
@@ -105,23 +107,23 @@ const IconButton = ({
   return (
     <div
       ref={innerRef}
-      className={`nav-link flex items-center cursor-pointer border-transparent hover:border-custom-primary border rounded font-normal ${
-        isDontationButton ? 'bg-openbeta-orange text-openbeta-white h-10 w-32 justify-center' : ''
-      } ${isExpanded ? 'w-full text-left justify-start': '' }`}
+      className={`nav-link flex items-center cursor-pointer border-transparent hover:border-custom-primary font-normal ${
+        isDontationButton ? 'bg-openbeta-orange text-openbeta-white h-10 w-32 justify-center rounded no-border' : ''
+      } ${isExpanded ? 'w-full text-left justify-start border-t border-openbeta-dark-turquoise': ' border rounded' }`}
     >
       {popover && (
-        <div className="px-6 py-2 flex items-center">
+        <div className={`flex items-center ${isExpanded ? 'px-6 py-5' : 'px-6 py-2 '}`}>
           {Child}
           <ChevronDown className="ml-2 w-4 h-4" />
         </div>
       )}
       {route && route.startsWith('http') ? (
-        <a className="px-6 py-1.5" href={route}>
+        <a className={` ${isExpanded ? 'px-6 py-5' : 'px-6 py-2 '} `} href={route}>
           {Child}
         </a>
       ) : (
         route && (
-          <Link className="px-6 py-2" to={route}>
+          <Link className={` ${isExpanded ? 'px-6 py-5' : 'px-6 py-2 '} `} to={route}>
             {Child}
           </Link>
         )

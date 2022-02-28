@@ -175,6 +175,14 @@ input[type="radio"]:checked {
   background-color: rgba(47, 106, 108, 0.6);
 }
 
+.border-openbeta-dark-turquoise {
+  border-color: #2F6A6C;
+}
+
+.no-border {
+  border: none !important;
+}
+
 .text-openbeta-orange {
   color: #F15E40;
 }
