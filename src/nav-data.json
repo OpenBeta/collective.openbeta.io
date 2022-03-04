@@ -18,6 +18,10 @@
             "title": "Get involved"
         },
         {
+            "route": "https://tacos.openbeta.io",
+            "title": "OpenTacos"
+        },
+        {
             "route": "https://opencollective.com/openbeta",
             "title": "Donate now",
             "emphasis": true
@@ -25,13 +29,18 @@
     ],
     "community": [
         {
+            "route": "https://docs.openbeta.io/",
+            "title": "Documentation",
+            "description": "How to contribute guide and technical references."
+        },
+        {
             "route": "https://openbeta.substack.com",
             "title": "Blog",
             "description": "Tutorials, coding examples, and important annoucements."
         },
         {
             "route": "https://github.com/openbeta",
-            "title": "GitHub Repo",
+            "title": "OpenBeta on GitHub",
             "description": "Download climbing dataset.  Check out the source code behind our projects."
         },
         {
