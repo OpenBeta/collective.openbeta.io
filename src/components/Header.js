@@ -142,14 +142,14 @@ const IconButtonRef = React.forwardRef((props, ref) => {
 
 const PopoverContent = ({ attrs, list }) => (
   <div
-    className="bg-gray-100 max-w-screen-sm p-4 rounded-md shadow-xl border-2"
+    className="bg-openbeta-white max-w-screen-sm p-4 openbeta-popover no-border"
     {...attrs}
   >
     <div className="flex flex-col gap-y-4 text-lg divide-y">
       {list.map(({ route, title, description }) => (
         <a key={route} className="p-2 hover:bg-gray-200 rounded" href={route}>
-          <div className="font-extrabold">{title}</div>
-          <div className="text-base">{description}</div>
+          <div className="font-extrabold text-openbeta-orange">{title}</div>
+          <div className="text-base font-open-sans text-openbeta-black">{description}</div>
         </a>
       ))}
     </div>
