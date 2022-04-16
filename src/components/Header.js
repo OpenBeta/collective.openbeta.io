@@ -108,7 +108,7 @@ const IconButton = ({
       ref={innerRef}
       className={`nav-link flex items-center cursor-pointer border-transparent hover:border-custom-primary font-normal 
         ${emphasis && isExpanded ? 'bg-openbeta-orange text-openbeta-white h-10 w-32 justify-center rounded no-border font-medium' : ''}
-        ${outline && !isExpanded ? 'bg-openbeta-white text-openbeta-orange h-10 w-32 justify-center rounded border-openbeta-orange font-medium' : ''} 
+        ${outline && !isExpanded ? 'bg-transparent text-openbeta-orange h-10 w-32 justify-center rounded border-openbeta-orange font-medium' : ''} 
         ${isExpanded ? 'w-full text-left justify-start border-t border-openbeta-dark-turquoise': 'border rounded' }`}
     >
       {popover && (
