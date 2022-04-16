@@ -212,6 +212,10 @@ input[type="radio"]:checked {
   border-radius: 10px;
 }
 
+.openbeta-feature-climb-link {
+  background: rgba(0, 0, 0, 0.31);
+}
+
 /* Specific Layout */
 .nav-link:nth-child(5n) {
   margin-right: 0.5rem; 

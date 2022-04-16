@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
+import FeatureClimbLink from '../FeatureClimbLink';
 
 export default function Hero() {
   return (
@@ -49,6 +50,10 @@ export default function Hero() {
               >
                 Learn more
               </Link>
+              <FeatureClimbLink
+                link="https://tacos.openbeta.io/climbs/623b6bcf26b7b51117760df4"
+                text="Colorado, Independence Pass"
+              ></FeatureClimbLink>
             </div>
           </div>
         </div>
