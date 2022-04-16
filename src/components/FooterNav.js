@@ -28,11 +28,11 @@ export default function FooterNav(props) {
   );
 }
 
-const SmartLink = ({ title, route, emphasis, isChild }) => {
+const SmartLink = ({ title, route, outline, isChild }) => {
   return (
-    <div className={emphasis ? 'btn btn-link w-32 h-9 text-center bg-openbeta-orange font-bold px-9 h-10' : ''}>
+    <div className={outline ? 'btn btn-link text-center bg-openbeta-orange font-bold h-10 w-32' : ''}>
       {route.startsWith('http') ? (
-        <a  className={`${!isChild ? titleStyles : ''}  ${emphasis ? 'leading-normal' : ''}`} href={route}>{title}</a>
+        <a  className={`${!isChild ? titleStyles : ''}  ${outline ? 'leading-normal' : ''}`} href={route}>{title}</a>
       ) : (
         route && <Link className={`${!isChild ? titleStyles : ''}`} to={route}>{title}</Link>
       )}
