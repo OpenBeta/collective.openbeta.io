@@ -88,10 +88,9 @@ const IconButton = ({
   emphasis,
   pathname,
   popover,
-  isExpanded
+  isExpanded,
+  outline
 }) => {
-
-  const isDontationButton = emphasis;
 
   const Child = (
     <div
@@ -107,9 +106,10 @@ const IconButton = ({
   return (
     <div
       ref={innerRef}
-      className={`nav-link flex items-center cursor-pointer border-transparent hover:border-custom-primary font-normal ${
-        isDontationButton ? 'bg-openbeta-orange text-openbeta-white h-10 w-32 justify-center rounded no-border' : ''
-      } ${isExpanded ? 'w-full text-left justify-start border-t border-openbeta-dark-turquoise': ' border rounded' }`}
+      className={`nav-link flex items-center cursor-pointer border-transparent hover:border-custom-primary font-normal 
+        ${emphasis && isExpanded ? 'bg-openbeta-orange text-openbeta-white h-10 w-32 justify-center rounded no-border font-medium' : ''}
+        ${outline && !isExpanded ? 'bg-openbeta-white text-openbeta-orange h-10 w-32 justify-center rounded border-openbeta-orange font-medium' : ''} 
+        ${isExpanded ? 'w-full text-left justify-start border-t border-openbeta-dark-turquoise': 'border rounded' }`}
     >
       {popover && (
         <div className={`flex items-center ${isExpanded ? 'px-6 py-5' : 'px-6 py-2 '}`}>
