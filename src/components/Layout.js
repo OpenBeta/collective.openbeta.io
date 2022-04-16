@@ -16,7 +16,7 @@ function Layout({ extraClz, bgColor = 'bg-openbeta-white', children }) {
       <footer className="bg-openbeta-dark-turquoise">
         <nav className="flex max-w-7xl mx-auto text-sm text-white flex-col">
           <div className="flex flex-row justify-between mt-12">
-            <LogoLarge className="xs:hidden md:flex"/>
+            <LogoLarge className="xs:hidden md:flex w-20 h-20 mt-4"/>
             <FooterNav />
           </div>
           <SocialIcons/>
