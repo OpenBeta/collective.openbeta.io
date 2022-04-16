@@ -15,17 +15,17 @@ export default function LatestBlogArticle() {
           placeholder="blurred"
           quality="90"
           objectFit='cover'
-          objectPosition='50% 75%'
+          objectPosition='50% 60%'
           style={{
-            maxHeight: '750px'
+            maxHeight: '450px'
           }}
         />
-        <div className="flex flex-col mt-12 pl-14 w-1/2 self-start">
+        <div className="flex flex-col mt-14 pl-14 w-1/2 self-start">
           <h3 className="font-bold text-3xl">Latest blog article</h3>
           <h1 className="font-open-sans text-5xl mt-4 w-3/5 leading-blog-article-title">Estimating Route Quality: Analysis and Applications</h1>
           <div className="mt-12">
               <Link
-                className="self-start py-4 px-12 btn btn-link text-center leading-10 bg-openbeta-orange xs:font-medium md:font-normal xs:text-2xl md:text-lg"
+                className="self-start py-3 px-12 btn btn-link text-center leading-10 bg-openbeta-orange xs:font-medium md:font-normal xs:text-2xl md:text-lg"
                 to="https://openbeta.substack.com/p/estimating-route-quality-analysis"
               >
                 Read more
