@@ -23,6 +23,7 @@ export default function Hero() {
         />
         <div
           style={{
+            background: 'linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) )',
             // By using the same grid area for both, they are stacked on top of each other
             gridArea: '1/1',
             position: 'relative',
