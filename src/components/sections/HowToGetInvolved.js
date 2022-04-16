@@ -14,21 +14,21 @@ export default function HowToGetInvolved() {
         </div>
 
         <div className="md:flex-row md:py-20 md:items-baseline md:w-full md:justify-between md:flex xs:flex xs:flex-col xs:items-center">
-          <div className="flex flex-1 text-center items-center flex-col xs:pt-24">
+          <div className="flex flex-1 text-center items-center flex-col xs:pt-20">
             <One/>
             <div className="font-open-sans text-xl pt-5">
               <b>Give a helping hand!</b> <br></br> Help develop the platform itself
             </div>
           </div>
 
-          <div className="flex flex-1 text-center items-center flex-col xs:pt-32">
+          <div className="flex flex-1 text-center items-center flex-col xs:pt-20">
             <Two/>
             <div className="font-open-sans text-xl pt-5">
               <b>Don't be shy!</b> <br></br> Use the climbing dataset
             </div>
           </div>
 
-          <div className="flex flex-1 text-center items-center flex-col xs:pt-32">
+          <div className="flex flex-1 text-center items-center flex-col xs:pt-20">
             <Three/>
             <div className="font-open-sans text-xl pt-5">
               <b>Join the conversation!</b> <br></br> Be part of Discord community
