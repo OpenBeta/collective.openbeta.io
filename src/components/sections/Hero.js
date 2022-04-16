@@ -51,7 +51,6 @@ export default function Hero() {
                 Learn more
               </Link>
               <FeatureClimbLink
-                className="xs:hidden"
                 link="https://tacos.openbeta.io/climbs/623b6bcf26b7b51117760df4"
                 text="Colorado, Independence Pass"
               ></FeatureClimbLink>
