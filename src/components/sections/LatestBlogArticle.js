@@ -63,7 +63,7 @@ export default function LatestBlogArticle() {
               Latest blog article
             </h3>
             <h1 className="font-open-sans text-5xl py-8">Estimating Route Quality: Analysis and Applications</h1>
-            <div class="py-8">
+            <div className="py-8">
               <Link
                   className="self-start py-6 px-12 btn btn-link text-center leading-10 bg-openbeta-orange xs:font-medium md:font-normal xs:text-2xl md:text-lg"
                   to="https://openbeta.substack.com/p/estimating-route-quality-analysis"
