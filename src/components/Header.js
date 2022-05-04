@@ -145,7 +145,7 @@ const PopoverContent = ({ attrs, list }) => (
     className="bg-openbeta-white max-w-screen-sm p-4 openbeta-popover no-border"
     {...attrs}
   >
-    <div className="flex flex-col gap-y-4 text-lg divide-y">
+    <div className="flex flex-col gap-y-4 text-lg divide-y xs:overflow-auto xs:h-64 md:h-full">
       {list.map(({ route, title, description }) => (
         <a key={route} className="p-2 hover:bg-gray-200 rounded" href={route}>
           <div className="font-extrabold text-openbeta-orange">{title}</div>
