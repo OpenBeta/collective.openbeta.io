@@ -8,7 +8,7 @@ import SocialIcons from './SocialIcons';
 
 function Layout({ extraClz, bgColor = 'bg-openbeta-white', children }) {
   return (
-    <div className={`main-container ${extraClz}`}>
+    <div className={`main-container ${extraClz ? extraClz : '' }`}>
       <Header bgColor={bgColor} />
 
       <main className="">{children}</main>

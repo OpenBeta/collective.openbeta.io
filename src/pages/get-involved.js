@@ -7,12 +7,14 @@ import WideContainer from '../components/WideContainer';
 
 export default function Why() {
   return (
-    <Layout>
+    <Layout
+      bgColor='md:bg-transparent xs:bg-white'
+    >
       <Seo
         keywords={[`rock climbing`, `openbeta`, `free climbing api`]}
         title="How to get involved"
       />
-      <div className="-mt-32" style={{ display: 'grid' }}>
+      <div className="md:-mt-32 xs:mt-28" style={{ display: 'grid' }}>
         <StaticImage
           className="z-0"
           src="../assets/heros/indian-creek.jpg"

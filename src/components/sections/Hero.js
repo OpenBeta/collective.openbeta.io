@@ -5,7 +5,7 @@ import FeatureClimbLink from '../FeatureClimbLink';
 
 export default function Hero() {
   return (
-    <section className="layout-center">
+    <section className="layout-center xs:mt-28 md:mt-0">
       <div className="" style={{ display: 'grid'}}>
       <StaticImage
         className="z-0"

@@ -20,7 +20,7 @@ export default function About() {
         ]}
         title="About us"
       />
-      <article>
+      <article className='xs:mt-28'>
         <section className="std-layout std-layout-padding my-8 md:mt-24 max-w-prose">
           <div className="prose md:prose-xl">
             <h3 className="text-2xl font-medium">About OpenBeta</h3>
