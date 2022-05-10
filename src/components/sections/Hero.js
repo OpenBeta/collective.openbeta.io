@@ -7,8 +7,7 @@ export default function Hero() {
     <div className="">
       <section className="layout-center py-16 md:pt-36 md:mb-24 ">
         <h1 className="text-center text-5xl md:text-7xl pb-4 font-display font-black md:font-bold tracking-tight text-gray-800">
-          A fair, free <br />
-          and open future
+          The Future Is Open
         </h1>
         <div className="mx-auto max-w-xl mt-4 flex flex-col justify-center items-center px-4">
           <h3 className="text-center text-2xl text-gray-600 font-sans">

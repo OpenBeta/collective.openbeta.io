@@ -39,6 +39,12 @@
         "email": "chloebeaulieu@hotmail.com"
     },
     {
+        "fname": "Kendra",
+        "lname": "Gibbons",
+        "role": "Software Development",
+        "email": "kendra.gibbons@gmail.com"
+    },
+    {
         "fname": "Adam",
         "lname": "Marcus",
         "active": "false"

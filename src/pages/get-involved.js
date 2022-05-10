@@ -49,20 +49,23 @@ export default function Why() {
           <h3>Four primary ways you can get involved:</h3>
           <ul>
             <li>
-              Help improve the <a href="https://tacos.openbeta.io">climbing catalog</a>, write descriptions for your
+              Help improve the <a href="https://tacos.openbeta.io">climbing route wiki (OpenTacos)</a>, write descriptions for your
               favorite climbing areas, and make corrections to a climb/boulder.
             </li>
             <li>
-              Participate in the development of the OpenBeta platform itself.
-              This includes the{' '}
+              Participate in the development of the OpenBeta platform itself: 
+               &nbsp;the{' '}
               <a href="https://github.com/openbeta/open-tacos">
-                climbing route catalog
-              </a>{' '}
-              (under active development), the climbing route{' '}
-              <a href="https://gitlab.com/openbeta/openbeta-api-app">
-                Geocoder API
-              </a>{' '}
-              and related subprojects.
+                wiki
+              </a>,{' '}
+              the&nbsp;
+              <a href="https://github.com/OpenBeta/openbeta-graphql">
+              API
+              </a>,{' '}
+              and the &nbsp;
+              <a href="https://github.com/OpenBeta/sandbag">
+              grade conversion library.
+              </a>
             </li>
 
             <li>
