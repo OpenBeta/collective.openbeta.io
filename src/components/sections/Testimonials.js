@@ -1,34 +1,33 @@
 import React from 'react';
 
-import Quote from '../../assets/icons/quote.svg';
-
 export default function Testimonials() {
   return (
-    <section className="my-16 layout-center layout-wide flex flex-col md:flex-row md:items-start space-x-16 space-y-8">
-      <div>
-        <Quote className="w-12 h-12 fill-current text-gray-400" />
+    <section className="flex bg-openbeta-dark-turquoise">
+      <div className='max-w-7xl mx-auto flex xs:flex-col md:flex-row justify-between xs:pb-12 md:p-0 xs:mt-20 md:my-24 text-openbeta-white'>
+        {quotes.map((entry, index) => (
+          <Card key={index} {...entry} />
+        ))}
       </div>
-      {quotes.map((entry) => (
-        <Card {...entry} />
-      ))}
     </section>
   );
 }
 
 const Card = ({ text, author }) => (
-  <div>
-    <div className="text-lg font-semibold">{text}</div>
-    <div className="mt-2">— {author}</div>
+  <div className="md:w-5/12 xs:px-8 xs:pb-8 md:p-0">
+    <q className="text-testimonials h-7 font-normal leading-8 font-open-sans">{text}</q>
+    <div className="flex flex-col mt-12 items-end">
+      <div className="text-2xl">— {author}</div>
+    </div>
   </div>
 );
 
 const quotes = [
   {
-    text: 'Just as climbing should be open to everyone. The knowledge of these great experiences should be open to anyone willing to learn.',
-    author: 'Brody Lowe',
+    text: 'Just as climbing should be open to everyone, the knowledge of these great experiences should be open to anyone willing to learn.',
+    author: 'Brody Lowe'
   },
   {
     text: 'OpenBeta summed up my thoughts extremely well. I believe the data that was curated by the community should stay open to community use.',
-    author: 'Raymond Fiscus',
+    author: 'Raymond Fiscus'
   },
 ];

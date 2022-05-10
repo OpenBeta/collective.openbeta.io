@@ -75,9 +75,18 @@ module.exports = {
       resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
-          include: /assets\/icons\/.*\.svg/,
+          include: /\.inline\.svg$/,
         },
       },
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        custom: {
+          families: ['ISO'],
+          urls: ['/fonts/fonts.css']
+        }
+      }
     },
     {
       resolve: `gatsby-plugin-mailchimp`,

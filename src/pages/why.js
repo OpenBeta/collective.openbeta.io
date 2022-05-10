@@ -3,20 +3,20 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
-import  MadeWithOB from "../components/sections/MadeWithOB"
-import Subscribe from '../components/Subscribe';
-import Pin from '../assets/icons/pin.svg';
+import MadeWithOB from "../components/sections/MadeWithOB"
+import Pin from '../assets/icons/pin.inline.svg';
 import WhyDevCTA from '../components/sections/WhyDevCTA';
 
 export default function Why() {
-  const bg = ''; 
   return (
-    <Layout>
+    <Layout
+      bgColor='md:bg-transparent xs:bg-white'
+    >
       <Seo
         keywords={[`rock climbing`, `openbeta`, `free climbing api`]}
         title="Why OpenBeta"
       />
-      <div className="-mt-20" style={{ display: 'grid' }}>
+      <div className="md:-mt-32 xs:mt-28" style={{ display: 'grid' }}>
         <StaticImage
           className="z-0"
           src="../assets/mohammad-alizade-bg.jpeg"

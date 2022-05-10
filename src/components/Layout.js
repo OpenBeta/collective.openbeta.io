@@ -2,18 +2,25 @@ import React from 'react';
 
 import Header from './Header';
 import FooterNav from './FooterNav';
+import LogoLarge from '../assets/icons/logo-2022-large.inline.svg';
+import SocialIcons from './SocialIcons';
 
-function Layout({ extraClz, bgColor = 'bg-current', children }) {
+
+function Layout({ extraClz, bgColor = 'bg-openbeta-white', children }) {
   return (
-    <div className={`main-container ${extraClz}`}>
+    <div className={`main-container ${extraClz ? extraClz : '' }`}>
       <Header bgColor={bgColor} />
 
       <main className="">{children}</main>
 
-      <footer className="bg-gray-900">
-        <nav className="flex justify-between max-w-5xl p-4 mx-auto text-sm text-white">
-          <FooterNav />
-          <span className="text-gray-400">CC-BY-SA 2021 OpenBeta</span>
+      <footer className="bg-openbeta-dark-turquoise">
+        <nav className="flex max-w-7xl mx-auto text-sm text-white flex-col">
+          <div className="flex flex-row justify-between mt-12">
+            <LogoLarge className="xs:hidden md:flex w-20 h-20 mt-4"/>
+            <FooterNav />
+          </div>
+          <SocialIcons/>
+          <span className="pt-1.5 mt-2.5 mb-14 border-t border-white font-open-sans text-lg xs:text-center md:text-left xs:w-3/4 md:w-full xs:self-center">CC-BY-SA 2021 OpenBeta</span>
         </nav>
       </footer>
     </div>

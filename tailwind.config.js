@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 // See https://tailwindcss.com/docs/configuration for details
 module.exports = {
   purge: ['./src/**/*.js'],
@@ -9,8 +11,13 @@ module.exports = {
     },
   },
   theme: {
+    screens: {
+      'xs': '375px',
+      ...defaultTheme.screens,
+    },
     extend: {
       colors: {
+        'bg-openbeta-orange': '#F15E40',
         'custom-green': '#8BB191',
         'custom-blue': '#62cae3',
         'custom-avery': '#a5d9cf',
@@ -26,9 +33,10 @@ module.exports = {
         'Consolas',
         'Liberation Mono',
         'Courier New',
-        'monospace',
+        'monospace'
       ],
       sans: [
+        'ISO',
         'Open Sans',
         'ui-sans-serif',
         'system-ui',

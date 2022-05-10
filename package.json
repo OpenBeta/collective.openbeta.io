@@ -21,6 +21,7 @@
     "gatsby-plugin-react-helmet": "^4.7.1",
     "gatsby-plugin-react-svg": "^3.0.1",
     "gatsby-plugin-sharp": "^3.10.2",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-remark-images": "^5.10.0",
     "gatsby-remark-twitter-cards": "^0.6.1",
     "gatsby-source-filesystem": "^3.5.0",

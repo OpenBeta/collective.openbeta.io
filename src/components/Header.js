@@ -3,25 +3,21 @@ import { Link } from 'gatsby';
 import { useLocation } from '@reach/router';
 import Tippy from '@tippyjs/react/headless';
 
-import Logo from '../assets/openbeta-logo.png';
-import Close from '../assets/icons/x.svg';
-import ChevronDown from '../assets/icons/chevron-down.svg';
+import Close from '../assets/icons/x.inline.svg';
+import ChevronDown from '../assets/icons/chevron-down.inline.svg';
 import NavData from "../nav-data.json";
 
-function Header({ bgColor = 'bg-gray-50' }) {
+import HeaderLogo from './header/logo';
+
+function Header({ bgColor = 'bg-white' }) {
   const [isExpanded, toggleExpansion] = useState(false);
   const location = useLocation();
+
   return (
-    <header className={`w-full mx-auto py-2 z-auto py-3 border-2 ${bgColor}}`}>
-      <div className="flex flex-wrap items-center justify-between max-w-4xl  px-2 mx-auto">
-        <Link to="/">
-          <h1 className="flex items-center no-underline">
-            <img
-              className="z-50 w-12 h-12 rounded-full border border-custom-primary bg-custom-blue bg-opacity-60 backdrop-filter p-2"
-              src={Logo}
-            />
-          </h1>
-        </Link>
+    <header className={`w-full mx-auto z-auto md:py-7 ${bgColor} xs:py-8 xs:px-3 xs:fixed xs:z-40 xs:top-0 md:relative`}>
+      <div className="flex flex-wrap items-center justify-between max-w-7xl px-2 mx-auto">
+        <HeaderLogo></HeaderLogo>
+
         <button
           className="z-50 items-center block px-3 py-2 text-gray-900 border rounded md:hidden"
           onClick={() => toggleExpansion(!isExpanded)}
@@ -41,9 +37,9 @@ function Header({ bgColor = 'bg-gray-50' }) {
         </button>
 
         <nav
-          className={`z-50 text-sm ${
-            isExpanded ? `block bg-gray-50` : `hidden`
-          }  md:flex md:justify-end w-full md:w-auto  `}
+          className={`z-50 text-sm items-center ${
+            isExpanded ? `block bg-white text-openbeta-orange text-2xl mt-10` : `hidden  mt-2.5`
+          }  md:flex md:justify-end w-full md:w-auto`}
         >
           {NavData.nav.map((entry) => {
             if (entry.popover) {
@@ -52,7 +48,6 @@ function Header({ bgColor = 'bg-gray-50' }) {
                   key={entry.title}
                   interactive={true}
                   trigger="click"
-                  // className="border"
                   placement="bottom"
                   render={(attrs) => (
                     <PopoverContent
@@ -63,6 +58,7 @@ function Header({ bgColor = 'bg-gray-50' }) {
                 >
                   <IconButtonRef
                     pathname={location.pathname}
+                    isExpanded={isExpanded}
                     {...entry}
                     popover={true}
                   />
@@ -73,6 +69,7 @@ function Header({ bgColor = 'bg-gray-50' }) {
             return (
               <IconButton
                 key={entry.title}
+                isExpanded={isExpanded}
                 pathname={location.pathname}
                 {...entry}
               />
@@ -91,12 +88,16 @@ const IconButton = ({
   emphasis,
   pathname,
   popover,
+  isExpanded,
+  outline
 }) => {
+
   const Child = (
     <div
-      className={`text-lg no-underline ${
+      className={`no-underline ${
         route === pathname ? 'border-b-2 border-gray-500' : ''
-      }`}
+      } ${isExpanded ? 'text-2xl' : 'text-lg'}`
+    }
     >
       {title}
     </div>
@@ -105,23 +106,24 @@ const IconButton = ({
   return (
     <div
       ref={innerRef}
-      className={`flex items-center	cursor-pointer border-transparent hover:border-custom-primary border rounded ${
-        emphasis ? 'md:mx-4 bg-custom-blue' : ''
-      }`}
+      className={`nav-link flex items-center cursor-pointer border-transparent hover:border-custom-primary font-normal 
+        ${emphasis && isExpanded ? 'bg-openbeta-orange text-openbeta-white h-10 w-32 justify-center rounded no-border font-medium' : ''}
+        ${outline && !isExpanded ? 'bg-transparent text-openbeta-orange h-10 w-32 justify-center rounded border-openbeta-orange font-medium' : ''} 
+        ${isExpanded ? 'w-full text-left justify-start border-t border-openbeta-dark-turquoise': 'border rounded' }`}
     >
       {popover && (
-        <div className="px-4 py-2 flex items-center">
+        <div className={`flex items-center ${isExpanded ? 'px-6 py-5' : 'px-6 py-2 '}`}>
           {Child}
           <ChevronDown className="ml-2 w-4 h-4" />
         </div>
       )}
       {route && route.startsWith('http') ? (
-        <a className="px-4 py-2" href={route}>
+        <a className={` ${isExpanded ? 'px-6 py-5' : 'px-6 py-2 '} `} href={route}>
           {Child}
         </a>
       ) : (
         route && (
-          <Link className="px-4 py-2" to={route}>
+          <Link className={` ${isExpanded ? 'px-6 py-5' : 'px-6 py-2 '} `} to={route}>
             {Child}
           </Link>
         )
@@ -140,14 +142,14 @@ const IconButtonRef = React.forwardRef((props, ref) => {
 
 const PopoverContent = ({ attrs, list }) => (
   <div
-    className="bg-gray-100 max-w-screen-sm p-4 rounded-md shadow-xl border-2"
+    className="bg-openbeta-white max-w-screen-sm p-4 openbeta-popover no-border"
     {...attrs}
   >
-    <div className="flex flex-col gap-y-4 text-lg divide-y">
+    <div className="flex flex-col gap-y-4 text-lg divide-y xs:overflow-auto xs:h-64 md:h-full">
       {list.map(({ route, title, description }) => (
         <a key={route} className="p-2 hover:bg-gray-200 rounded" href={route}>
-          <div className="font-extrabold">{title}</div>
-          <div className="text-base">{description}</div>
+          <div className="font-extrabold text-openbeta-orange">{title}</div>
+          <div className="text-base font-open-sans text-openbeta-black">{description}</div>
         </a>
       ))}
     </div>

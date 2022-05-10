@@ -57,7 +57,7 @@ export default () => (
       contentWidth="max-w-6xl"
       contentClass="pt-12 md:pt-16 text-white"
     >
-      <div className="text-4xl font-bold text-white">
+      <div className="md:text-4xl xs:text-2xl font-bold text-white">
         Build from our Javascript and Python libraries/examples.&nbsp;
         <span className="text-gray-400">
           Use our Geocoder API to look up climbs by name, location.

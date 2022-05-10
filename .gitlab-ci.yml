@@ -11,4 +11,5 @@ pages:
   artifacts:
     paths:
       - public
-
+  only: # Only run for these branches
+    - main

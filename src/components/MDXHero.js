@@ -2,7 +2,7 @@ import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 
 export default ({ src, imageAltText, children }) => (
-  <div className="-mt-20 h-screen" style={{ display: 'grid' }}>
+  <div className="-mt-32 h-screen" style={{ display: 'grid' }}>
     <StaticImage
       className="z-0"
       src="./src/assets/heros/indian-creek.jpg"

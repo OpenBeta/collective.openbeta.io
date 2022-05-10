@@ -1,10 +1,6 @@
 {
     "nav": [
         {
-            "route": "/",
-            "title": "Home"
-        },
-        {
             "route": "/why",
             "title": "Why OpenBeta"
         },
@@ -15,15 +11,21 @@
         },
         {
             "route": "/get-involved",
-            "title": "Get involved"
+            "title": "Get Involved"
         },
         {
-            "route": "https://tacos.openbeta.io",
-            "title": "OpenTacos"
+            "route": "/about",
+            "title": "About Us"
+        },
+        {
+            "route": "https://tacos.openbeta.io/",
+            "title": "OpenTaco",
+            "outline": true
         },
         {
             "route": "https://opencollective.com/openbeta",
-            "title": "Donate now",
+            "title": "Donate",
+            "outline": true,
             "emphasis": true
         }
     ],
@@ -31,7 +33,7 @@
         {
             "route": "https://docs.openbeta.io/",
             "title": "Documentation",
-            "description": "How to contribute guide and technical references."
+            "description": "How to contribute, technical overview, 2022 roadmap."
         },
         {
             "route": "https://openbeta.substack.com",
@@ -42,11 +44,6 @@
             "route": "https://github.com/openbeta",
             "title": "OpenBeta on GitHub",
             "description": "Download climbing dataset.  Check out the source code behind our projects."
-        },
-        {
-            "route": "https://trello.com/b/Ir8emiyR/openbeta-project",
-            "title": "Public Roadmap",
-            "description": "Follow the development and make suggestions for what features you would like to see in the future."
         },
         {
             "route": "https://discord.gg/a5HskjmqPc",
@@ -60,7 +57,7 @@
         },
         {
             "route": "/about",
-            "title": "About us",
+            "title": "About Us",
             "description": "Learn more about the people behind the project."
         }
     ]
