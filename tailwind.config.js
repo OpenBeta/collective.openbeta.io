@@ -17,7 +17,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        'bg-openbeta-orange': '#F15E40',
+        'openbeta-orange': '#F15E40',
         'custom-green': '#8BB191',
         'custom-blue': '#62cae3',
         'custom-avery': '#a5d9cf',

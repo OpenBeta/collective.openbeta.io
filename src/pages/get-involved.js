@@ -116,8 +116,8 @@ export default function Why() {
         <ul>
           <li>
             Have a look at the{' '}
-            <a href="https://trello.com/b/Ir8emiyR/openbeta-project">
-              Trello board
+            <a href="https://github.com/OpenBeta/open-tacos/projects/2">
+              Project Roadmap
             </a>{' '}
             to see what we're working on.
           </li>
