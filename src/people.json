@@ -49,6 +49,17 @@
         "role": "Software Development"
     },
     {
+        "fname": "Clinton",
+        "lname": "Lunn",
+        "role": "Software Development"
+    },
+    {
+        "fname": "Adelore",
+        "lname": "Lessard",
+        "role": "DevOps",
+        "linkedin": "https://www.linkedin.com/in/adelorelessard/"
+    },
+    {
         "fname": "Adam",
         "lname": "Marcus",
         "active": "false"
@@ -56,11 +67,6 @@
     {
         "fname": "Haden",
         "lname": "Bricker",
-        "active": "false"
-    },
-    {
-        "fname": "Adelore",
-        "lname": "Lessard",
         "active": "false"
     }
 ]
