@@ -56,6 +56,7 @@ export default function About() {
             humans, who enjoy climbing and believe in creating freedom and
             giving back to the community as much as we can.
           </div>
+          <hr className='my-8'/>
           <People />
         </section>
         <AboutCTA />
@@ -87,8 +88,9 @@ const People = () => (
           <Profile key={entry.fname + entry.lname} {...entry} />
         ))}
     </div>
-    <div className="mt-8 text-lg font-bold">Former volunteers</div>
-    <div className="mt-4 grid grid-flow-rows grid-cols-1 md:grid-cols-2 auto-rows-auto gap-x-8 gap-y-4">
+    <hr className='my-8'/>
+    <div className="text-lg font-bold">Former volunteers</div>
+    <div className="mt-4 mb-16 grid grid-flow-rows grid-cols-1 md:grid-cols-2 auto-rows-auto gap-x-8 gap-y-4">
       {people
         .filter((entry) => entry.active === 'false')
         .sort(name_comparator)

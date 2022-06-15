@@ -3,14 +3,12 @@
         "fname": "Viet",
         "lname": "Nguyen",
         "role": "Founder, Software Development",
-        "email": "viet@openbeta.io",
         "linkedin": "https://www.linkedin.com/in/viethnguyen/"
     },
     {
         "fname": "Kevin",
         "lname": "Nadro",
         "role": "Software Development",
-        "email": "kevin.nadro@gmail.com",
         "linkedin": "https://www.linkedin.com/in/nadro/",
         "website": "https://kevinnadro.com/"
     },
@@ -19,14 +17,12 @@
         "lname": "Anderson",
         "academic_title": "PhD",
         "role": "Data Scientist",
-        "email": "rytheranderson@gmail.com",
         "website": "https://scholar.google.com/citations?user=kbL7G8QAAAAJ&hl=en"
     },
     {
         "fname": "Yannick",
         "lname": "Gingras",
         "role": "Senior Advisor",
-        "email": "ygingras@ygingras.net",
         "website": "http://ygingras.net/",
         "linkedin": "https://www.linkedin.com/in/ygingras/"
     },
@@ -35,14 +31,33 @@
         "lname": "Beaulieu",
         "role": "Graphic Design",
         "website": "https://creativechlo.myportfolio.com/work",
-        "linkedin": "https://www.linkedin.com/in/chlo%C3%A9-beaulieu-0481b41a3/",
-        "email": "chloebeaulieu@hotmail.com"
+        "linkedin": "https://www.linkedin.com/in/chlo%C3%A9-beaulieu-0481b41a3/"
+    },
+    {
+        "fname": "Colin",
+        "lname": "Gale",
+        "role": "Software Development"
+    },
+    {
+        "fname": "Nate",
+        "lname": "Hearnsberger",
+        "role": "Software Development"
     },
     {
         "fname": "Kendra",
         "lname": "Gibbons",
-        "role": "Software Development",
-        "email": "kendra.gibbons@gmail.com"
+        "role": "Software Development"
+    },
+    {
+        "fname": "Clinton",
+        "lname": "Lunn",
+        "role": "Software Development"
+    },
+    {
+        "fname": "Adelore",
+        "lname": "Lessard",
+        "role": "DevOps",
+        "linkedin": "https://www.linkedin.com/in/adelorelessard/"
     },
     {
         "fname": "Adam",
@@ -52,11 +67,6 @@
     {
         "fname": "Haden",
         "lname": "Bricker",
-        "active": "false"
-    },
-    {
-        "fname": "Adelore",
-        "lname": "Lessard",
         "active": "false"
     }
 ]

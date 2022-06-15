@@ -39,7 +39,7 @@ function Header({ bgColor = 'bg-white' }) {
         <nav
           className={`z-50 text-sm items-center ${
             isExpanded ? `block bg-white text-openbeta-orange text-2xl mt-10` : `hidden  mt-2.5`
-          }  md:flex md:justify-end w-full md:w-auto`}
+          }  md:flex md:justify-end md:space-x-4 w-full md:w-auto`}
         >
           {NavData.nav.map((entry) => {
             if (entry.popover) {
@@ -85,11 +85,11 @@ const IconButton = ({
   innerRef,
   title,
   route,
-  emphasis,
+  solid,
   pathname,
   popover,
   isExpanded,
-  outline
+  outlined
 }) => {
 
   const Child = (
@@ -102,13 +102,14 @@ const IconButton = ({
       {title}
     </div>
   );
+  //hover:ring-openbeta-orange h-10 w-32
 
   return (
     <div
       ref={innerRef}
-      className={`nav-link flex items-center cursor-pointer border-transparent hover:border-custom-primary font-normal 
-        ${emphasis && isExpanded ? 'bg-openbeta-orange text-openbeta-white h-10 w-32 justify-center rounded no-border font-medium' : ''}
-        ${outline && !isExpanded ? 'bg-transparent text-openbeta-orange h-10 w-32 justify-center rounded border-openbeta-orange font-medium' : ''} 
+      className={`nav-link flex items-center cursor-pointer font-normal border-transparent hover:ring-1 hover:ring-openbeta-orange
+        ${solid && !isExpanded ? 'px-2 hover:ring-0 hover:scale-105 hover:duration-500 bg-openbeta-orange justify-center rounded font-medium' : ''}
+        ${outlined && !isExpanded ? 'px-2 hover:ring-0 hover:scale-105 hover:duration-500 text-black justify-center rounded border-2  font-medium border-gray-300' : ''} 
         ${isExpanded ? 'w-full text-left justify-start border-t border-openbeta-dark-turquoise': 'border rounded' }`}
     >
       {popover && (
@@ -118,12 +119,12 @@ const IconButton = ({
         </div>
       )}
       {route && route.startsWith('http') ? (
-        <a className={` ${isExpanded ? 'px-6 py-5' : 'px-6 py-2 '} `} href={route}>
+        <a className={` ${isExpanded ? 'px-6 py-5' : 'px-4 py-2 '} ${solid? 'font-bold': ''} `} href={route}>
           {Child}
         </a>
       ) : (
         route && (
-          <Link className={` ${isExpanded ? 'px-6 py-5' : 'px-6 py-2 '} `} to={route}>
+          <Link className={` ${isExpanded ? 'px-6 py-5' : 'px-4 py-2 '} `} to={route}>
             {Child}
           </Link>
         )

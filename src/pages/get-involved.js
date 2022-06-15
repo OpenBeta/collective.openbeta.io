@@ -48,7 +48,7 @@ export default function Why() {
       </div>
       <section className="my-12 md:my-16">
         <div className="mx-auto md:max-w-prose prose px-4 text-base lg:prose-xl">
-          <h3>Four primary ways you can get involved:</h3>
+          <h3>Four ways you can get involved:</h3>
           <ul>
             <li>
               Help improve the <a href="https://tacos.openbeta.io">climbing route wiki (OpenTacos)</a>, write descriptions for your
@@ -116,8 +116,8 @@ export default function Why() {
         <ul>
           <li>
             Have a look at the{' '}
-            <a href="https://trello.com/b/Ir8emiyR/openbeta-project">
-              Trello board
+            <a href="https://github.com/OpenBeta/open-tacos/projects/2">
+              Project Roadmap
             </a>{' '}
             to see what we're working on.
           </li>
@@ -129,7 +129,7 @@ export default function Why() {
             </a>{' '}
             to chat with volunteers and climbers.
           </li>
-          <li>Help us sustain the project by becoming a backer for as little as $3/month.  <a href="https://opencollective.com/openbeta">Donate now</a>.</li>
+          <li>Help us sustain the project by becoming a supporter for as little as $3/month.  <a href="https://opencollective.com/openbeta">Donate now</a>.</li>
         </ul>
         <p>Questions? email us at hello@openbeta.io</p>
       </WideContainer>

@@ -20,13 +20,12 @@
         {
             "route": "https://tacos.openbeta.io/",
             "title": "OpenTaco",
-            "outline": true
+            "outlined": true
         },
         {
             "route": "https://opencollective.com/openbeta",
             "title": "Donate",
-            "outline": true,
-            "emphasis": true
+            "solid": true
         }
     ],
     "community": [
