@@ -124,7 +124,7 @@ export default function Why() {
           <li>
             {' '}
             Join the{' '}
-            <a href="https://discord.com/invite/a5HskjmqPc">
+            <a href="https://discord.com/invite/2A2F6kUtyh">
               Discord chat server
             </a>{' '}
             to chat with volunteers and climbers.
