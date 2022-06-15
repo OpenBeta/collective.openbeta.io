@@ -1,2 +1,1 @@
-# openbeta-website
-OpenBeta.io Website
+# OpenBeta.io Website
