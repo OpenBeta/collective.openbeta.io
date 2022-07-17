@@ -49,25 +49,26 @@ export default function Why() {
       <section className="my-12 md:my-16">
         <div className="mx-auto md:max-w-prose prose px-4 text-base lg:prose-xl">
           <h3>Four ways you can get involved:</h3>
-          <ul>
+          <ul className='list-decimal'>
             <li>
-              Help improve the <a href="https://tacos.openbeta.io">climbing route wiki (OpenTacos)</a>, write descriptions for your
-              favorite climbing areas, and make corrections to a climb/boulder.
+              Help improve the <a href="https://tacos.openbeta.io">climbing route catalog</a> by sharing photos and tagging climbs.  <i>Coming soon: Adding and editing climbs.</i>
             </li>
             <li>
               Participate in the development of the OpenBeta platform itself: 
-               &nbsp;the{' '}
-              <a href="https://github.com/openbeta/open-tacos">
-                wiki
-              </a>,{' '}
-              the&nbsp;
-              <a href="https://github.com/OpenBeta/openbeta-graphql">
-              API
-              </a>,{' '}
-              and the &nbsp;
-              <a href="https://github.com/OpenBeta/sandbag">
-              grade conversion library.
-              </a>
+               <ul className='list-disc'>
+                <li>
+                  <a href="https://github.com/OpenBeta/openbeta-graphql">Graph API</a>
+                </li>
+                <li>
+                  <a href="https://github.com/openbeta/open-tacos">Climb catalog frontend</a>
+                </li>
+                <li>
+                  <a href="https://github.com/OpenBeta/sandbag">Grade conversion library</a>
+                </li>
+                <li>
+                  <a href='https://github.com/OpenBeta/fa-cleanup'>FA data cleanup</a>
+                </li>
+              </ul>
             </li>
 
             <li>
