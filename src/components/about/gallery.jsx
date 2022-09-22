@@ -22,5 +22,17 @@ export default function Gallery() {
         quality={80}
         placeholder="blurred"
         src="../../assets/images/working-from-kalymnos.jpg" alt="Kalymnos office" />
+      <StaticImage
+        layout='constrained'
+        height={350}
+        quality={80}
+        placeholder="blurred"
+        src="../../assets/images/tshirt.jpg" alt="T-shirt and sticker" />
+      <StaticImage
+        layout='constrained'
+        height={350}
+        quality={80}
+        placeholder="blurred"
+        src="../../assets/images/meeting.jpg" alt="Video meeting" />
     </div>)
 }
