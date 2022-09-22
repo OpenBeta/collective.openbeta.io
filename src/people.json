@@ -62,11 +62,130 @@
     {
         "fname": "Adam",
         "lname": "Marcus",
-        "active": "false"
+        "role": "Technical Writer"
     },
     {
         "fname": "Haden",
         "lname": "Bricker",
-        "active": "false"
+        "role": "Marketing"
+    },
+    {
+        "fname": "Kurk",
+        "lname": "villanueva",
+        "role": "Software Development",
+        "linkedin": "http://linkedin.com/in/kurk-villanueva-02779216b"
+    },
+    {
+        "fname": "Michael",
+        "lname": "Dimmitt",
+        "role": "Software Development"
+    },
+    {
+        "fname": "umaxyon",
+        "lname": "",
+        "role": "Software Development",
+        "website": "https://github.com/umaxyon"
+    },
+    {
+        "fname": "Jacob",
+        "lname": "Struzik",
+        "role": "Software Development",
+        "website": "https://jacobstruzik.com"
+    },
+    {
+        "fname": "Kevin",
+        "lname": "",
+        "role": "Software Development",
+        "website": "https://github.com/innub"
+    },
+    {
+        "fname": "Osaf",
+        "lname": "",
+        "role": "Software Development",
+        "website": "https://github.com/osaf96"
+    },
+    {
+        "fname": "Xavier",
+        "lname": "Kong",
+        "role": "Software Development",
+        "website": "https://github.com/xavier-kong"
+    },
+    {
+        "fname": "Brendan",
+        "lname": "Downing",
+        "role": "Software Development",
+        "website": "https://github.com/Downster"
+    },
+    {
+        "fname": "admanny",
+        "lname": "",
+        "role": "Software Development",
+        "website": "https://github.com/admanny"
+    },
+    {
+        "fname": "Alex ",
+        "lname": "Mandrila",
+        "role": "Software Development",
+        "website": "http://alexmandrila.com"
+    },
+    {
+        "fname": "Denis",
+        "lname": "Lantsman",
+        "role": "Software Development",
+        "website": "https://github.com/dlants"
+    },
+    {
+        "fname": "Daniel",
+        "lname": "",
+        "role": "Software Development",
+        "website": "https://github.com/atstp"
+    },
+    {
+        "fname": "Prajwal",
+        "lname": "Borkar",
+        "role": "Software Development",
+        "website": "https://www.prajwalborkar.me/"
+    },
+    {
+        "fname": "Jetse",
+        "lname": "Verschuren",
+        "role": "Software Development",
+        "website": "https://github.com/JetseVerschuren"
+    },
+    {
+        "fname": "Siman",
+        "lname": "Shrestha",
+        "role": "Software Development",
+        "website": "https://github.com/siman4457"
+    },
+    {
+        "fname": "Siman",
+        "lname": "Shrestha",
+        "role": "Software Development",
+        "website": "https://github.com/siman4457"
+    },
+    {
+        "fname": "Antoine",
+        "lname": "Marnat",
+        "role": "Software Development",
+        "website": "https://github.com/AntoineMarnat"
+    },
+    {
+        "fname": "Darren",
+        "lname": "Lew",
+        "role": "Software Development",
+        "website": "https://github.com/DarrenZLew"
+    },
+    {
+        "fname": "Greg",
+        "lname": "Hughes",
+        "role": "Software Development",
+        "website": "https://github.com/catman237"
+    },
+    {
+        "fname": "Gal",
+        "lname": "Weinstock",
+        "role": "Software Development",
+        "website": "https://github.com/galw"
     }
 ]
