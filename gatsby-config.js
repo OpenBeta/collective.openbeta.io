@@ -22,7 +22,7 @@ module.exports = {
         background_color: fullConfig.theme.colors.white,
         theme_color: fullConfig.theme.colors.green['500'],
         display: `minimal-ui`,
-        icon: `src/assets/openbeta-logo.png`,
+        icon: `static/openbeta-logo.svg`,
       },
     },
     {

@@ -20,7 +20,7 @@ function Layout({ extraClz, bgColor = 'bg-openbeta-white', children }) {
             <FooterNav />
           </div>
           <SocialIcons/>
-          <span className="pt-1.5 mt-2.5 mb-14 border-t border-white font-open-sans text-lg xs:text-center md:text-left xs:w-3/4 md:w-full xs:self-center">CC-BY-SA 2021 OpenBeta</span>
+          <span className="pt-1.5 mt-2.5 mb-14 border-t border-white font-open-sans text-lg xs:text-center md:text-left xs:w-3/4 md:w-full xs:self-center">CC-BY-SA {(new Date()).getFullYear()} OpenBeta</span>
         </nav>
       </footer>
     </div>

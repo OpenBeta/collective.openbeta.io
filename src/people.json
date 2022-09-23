@@ -181,5 +181,16 @@
         "lname": "Weinstock",
         "role": "Software Development",
         "website": "https://github.com/galw"
+    },
+    {
+        "fname": "Annie",
+        "lname": "Ashenfelter",
+        "role": "Senior Advisor"
+    },
+    {
+        "fname": "Sergey",
+        "lname": "Tsibel",
+        "role": "Senior Advisor",
+        "linkedin": "https://www.linkedin.com/in/sergey-tsibel-28334854/"
     }
 ]
