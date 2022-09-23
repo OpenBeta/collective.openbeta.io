@@ -58,7 +58,7 @@ export default function About() {
           </div>
           <hr className='my-8'/>
           <h4 className='font-bold my-2'>Financial supporters</h4>
-          <p className=''>We are thankful for the generous donations from our supporters.  To see a complete list of donors and learn how you can contribute, visit our page the <a className='underline' href='https://opencollective.com/openbeta' target='_blank' rel='noopener noreferrer'>Open Collective Foundation</a>.</p>
+          <p className=''>We are thankful for the generous donations from our supporters.  To see a complete list of donors and learn how you can contribute, visit our home page on the <a className='underline' href='https://opencollective.com/openbeta' target='_blank' rel='noopener noreferrer'>Open Collective Foundation</a>.</p>
           <hr className='my-8'/>
           <People />
         </section>
