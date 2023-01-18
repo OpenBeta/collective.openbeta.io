@@ -1,0 +1,80 @@
+[
+    {
+        "fname": "Viet",
+        "lname": "Nguyen",
+        "role": "Founder, Software Development",
+        "linkedin": "https://www.linkedin.com/in/viethnguyen/"
+    },
+    {
+        "fname": "Ryther",
+        "lname": "Anderson",
+        "academic_title": "PhD",
+        "role": "Data Scientist",
+        "website": "https://scholar.google.com/citations?user=kbL7G8QAAAAJ&hl=en"
+    },
+    {
+        "fname": "Yannick",
+        "lname": "Gingras",
+        "role": "Senior Advisor",
+        "website": "http://ygingras.net/",
+        "linkedin": "https://www.linkedin.com/in/ygingras/"
+    },
+    {
+        "fname": "Chloé",
+        "lname": "Beaulieu",
+        "role": "Graphic Design",
+        "website": "https://creativechlo.myportfolio.com/work",
+        "linkedin": "https://www.linkedin.com/in/chlo%C3%A9-beaulieu-0481b41a3/"
+    },
+    {
+        "fname": "Colin",
+        "lname": "Gale",
+        "role": "Software Development"
+    },
+    {
+        "fname": "Clinton",
+        "lname": "Lunn",
+        "role": "Software Development"
+    },
+    {
+        "fname": "Brendan",
+        "lname": "Downing",
+        "role": "Software Development",
+        "website": "https://github.com/Downster"
+    },
+    {
+        "fname": "Alex ",
+        "lname": "Mandrila",
+        "role": "Software Development",
+        "website": "http://alexmandrila.com"
+    },
+    {
+        "fname": "Jetse",
+        "lname": "Verschuren",
+        "role": "Software Development",
+        "website": "https://github.com/JetseVerschuren"
+    },
+    {
+        "fname": "Siman",
+        "lname": "Shrestha",
+        "role": "Software Development",
+        "website": "https://github.com/siman4457"
+    },
+    {
+        "fname": "Darren",
+        "lname": "Lew",
+        "role": "Software Development",
+        "website": "https://github.com/DarrenZLew"
+    },
+    {
+        "fname": "Annie",
+        "lname": "Ashenfelter",
+        "role": "Senior Advisor"
+    },
+    {
+        "fname": "Sergey",
+        "lname": "Tsibel",
+        "role": "Senior Advisor",
+        "linkedin": "https://www.linkedin.com/in/sergey-tsibel-28334854/"
+    }
+]

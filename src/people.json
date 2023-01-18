@@ -1,37 +1,10 @@
 [
     {
-        "fname": "Viet",
-        "lname": "Nguyen",
-        "role": "Founder, Software Development",
-        "linkedin": "https://www.linkedin.com/in/viethnguyen/"
-    },
-    {
         "fname": "Kevin",
         "lname": "Nadro",
         "role": "Software Development",
         "linkedin": "https://www.linkedin.com/in/nadro/",
         "website": "https://kevinnadro.com/"
-    },
-    {
-        "fname": "Ryther",
-        "lname": "Anderson",
-        "academic_title": "PhD",
-        "role": "Data Scientist",
-        "website": "https://scholar.google.com/citations?user=kbL7G8QAAAAJ&hl=en"
-    },
-    {
-        "fname": "Yannick",
-        "lname": "Gingras",
-        "role": "Senior Advisor",
-        "website": "http://ygingras.net/",
-        "linkedin": "https://www.linkedin.com/in/ygingras/"
-    },
-    {
-        "fname": "Chloé",
-        "lname": "Beaulieu",
-        "role": "Graphic Design",
-        "website": "https://creativechlo.myportfolio.com/work",
-        "linkedin": "https://www.linkedin.com/in/chlo%C3%A9-beaulieu-0481b41a3/"
     },
     {
         "fname": "Colin",
@@ -181,16 +154,5 @@
         "lname": "Weinstock",
         "role": "Software Development",
         "website": "https://github.com/galw"
-    },
-    {
-        "fname": "Annie",
-        "lname": "Ashenfelter",
-        "role": "Senior Advisor"
-    },
-    {
-        "fname": "Sergey",
-        "lname": "Tsibel",
-        "role": "Senior Advisor",
-        "linkedin": "https://www.linkedin.com/in/sergey-tsibel-28334854/"
     }
 ]

@@ -45,14 +45,9 @@
             "description": "Download climbing dataset.  Check out the source code behind our projects."
         },
         {
-            "route": "https://discord.com/invite/2A2F6kUtyh",
+            "route": "https://discord.gg/w2KpQu2ca5",
             "title": "Discord chat server",
             "description": "Chat with our volunteers and climbers who code."
-        },
-        {
-            "route": "https://community.openbeta.io",
-            "title": "Forum",
-            "description": "Community message board."
         },
         {
             "route": "/about",
