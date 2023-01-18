@@ -5,6 +5,7 @@ import Layout from '../components/Layout';
 import SEO from '../components/Seo';
 import BrowserWindow from '../components/BrowserWindow';
 import people from '../people.json';
+import volunteers from '../volunteers.json';
 import AboutCTA from '../components/sections/AboutCTA';
 import Gallery from '../components/about/gallery'
 
@@ -60,7 +61,9 @@ export default function About() {
           <h4 className='font-bold my-2'>Financial supporters</h4>
           <p className=''>We are thankful for the generous donations from our supporters.  To see a complete list of donors and learn how you can contribute, visit our page on the <a className='underline' href='https://opencollective.com/openbeta' target='_blank' rel='noopener noreferrer'>Open Collective Foundation</a> website.</p>
           <hr className='my-8'/>
+          <ActiveVolunteers/>
           <People />
+
         </section>
         <section className='layout-wide mx-auto'>
           <Gallery />
@@ -84,10 +87,23 @@ const name_comparator = (a, b) => {
   return 0;
 };
 
+const ActiveVolunteers = () => (
+  <>
+    <h4 className='font-bold my-2'>Active Volunteers</h4>
+    <div className="mt-8 grid grid-flow-rows grid-cols-1 md:grid-cols-2  auto-rows-auto gap-x-8 gap-y-8">
+      {volunteers
+        .filter((entry) => entry.active !== 'false')
+        .sort(name_comparator)
+        .map((entry) => (
+          <Profile key={entry.fname + entry.lname} {...entry} />
+        ))}
+    </div>
+    <hr className='my-8'/>
+  </>)
+
 const People = () => (
   <>
-    <h4 className='font-bold my-2'>Volunteers</h4>
-    <p>OpenBeta platform is built entirely by volunteer contributors.</p>
+    <h4 className='font-bold my-2'>Volunteers & GitHub contributors</h4>
     <div className="mt-8 grid grid-flow-rows grid-cols-1 md:grid-cols-2  auto-rows-auto gap-x-8 gap-y-8">
       {people
         .filter((entry) => entry.active !== 'false')
@@ -97,17 +113,6 @@ const People = () => (
         ))}
     </div>
     <hr className='my-8'/>
-    {/* <div className="text-lg font-bold">Former volunteers</div>
-    <div className="mt-4 mb-16 grid grid-flow-rows grid-cols-1 md:grid-cols-2 auto-rows-auto gap-x-8 gap-y-4">
-      {people
-        .filter((entry) => entry.active === 'false')
-        .sort(name_comparator)
-        .map(({ fname, lname, academic_title }) => (
-          <div className="text-base" key={fname + lname}>{`${fname} ${lname}${
-            academic_title ? `, ${academic_title}` : ''
-          }`}</div>
-        ))}
-    </div> */}
   </>
 );
 
