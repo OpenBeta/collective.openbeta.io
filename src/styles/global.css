@@ -232,3 +232,7 @@ input[type="radio"]:checked {
 .leading-blog-article-title {
   line-height: 4.375rem;
 }
+
+h3 {
+  @apply tracking-tight !important;
+}

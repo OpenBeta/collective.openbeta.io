@@ -48,20 +48,22 @@ export default function Why() {
       </div>
       <section className="my-12 md:my-16">
         <div className="mx-auto md:max-w-prose prose px-4 text-base lg:prose-xl">
+          <p>We're building the first open source and open license rock climbing catalog.</p><p>By contributing to the OpenBeta project, you can help ensure that the knowledge of rock climbing remains accessible to everyone. Whether you're a beginner or an experienced climber, your contributions will make a real difference</p>
           <h3>Four ways you can get involved:</h3>
           <ul className='list-decimal'>
             <li>
-              Help improve the <a href="https://tacos.openbeta.io">climbing route catalog</a> by sharing photos and tagging climbs.  <i>Coming soon: Adding and editing climbs.</i>
+              Help improve the <a href="https://openbeta.io">climbing route catalog</a>: add missing routes, crag descriptions, share photos, tag climbs.
             </li>
             <li>
               Participate in the development of the OpenBeta platform itself: 
                <ul className='list-disc'>
+               <li>
+                  <a href="https://github.com/openbeta/open-tacos">Climb catalog frontend</a>
+                </li>
                 <li>
                   <a href="https://github.com/OpenBeta/openbeta-graphql">Graph API</a>
                 </li>
-                <li>
-                  <a href="https://github.com/openbeta/open-tacos">Climb catalog frontend</a>
-                </li>
+                
                 <li>
                   <a href="https://github.com/OpenBeta/sandbag">Grade conversion library</a>
                 </li>
@@ -75,20 +77,13 @@ export default function Why() {
               Use the{' '}
               <a href="https://github.com/OpenBeta/climbing-data">
                 climbing dataset
-              </a>{' '}
-              and our hosted services to build anything you want.
+              </a>&nbsp;to in your projects.
             </li>
             <li>
               Contribute a guest article on{' '}
               <a href="https://openbeta.io/blog">openbeta.io/blog</a>
             </li>
           </ul>
-          <blockquote>
-            Contributor{' '}
-            <a href="https://github.com/OpenBeta/open-tacos/blob/main/CODE_OF_CONDUCT.md">
-              Code of Conduct
-            </a>
-          </blockquote>
           <h3>OpenBeta platform development</h3>
           <p>Your industry experience can give the project a huge boost.</p>
           <b>Software development</b>
@@ -118,14 +113,14 @@ export default function Why() {
           <li>
             Have a look at the{' '}
             <a href="https://github.com/OpenBeta/open-tacos/projects/2">
-              Project Roadmap
+              GitHub issues
             </a>{' '}
             to see what we're working on.
           </li>
           <li>
             {' '}
             Join the{' '}
-            <a href="https://discord.com/invite/2A2F6kUtyh">
+            <a href="https://discord.gg/w2KpQu2ca5">
               Discord chat server
             </a>{' '}
             to chat with volunteers and climbers.
