@@ -124,7 +124,7 @@ const Profile = ({
   contributions,
 }) => (
   <div className="text-base flex flex-col space-y-2">
-    <div className="text-lg font-bold">
+    <div className="text-lg font-bold capitalize">
       <a href={profile}>{name ? name : 'Anonymous'}</a>
     </div>
     <p className="text-sm text-gray-700 uppercase">{contributions.join(', ')}</p>
