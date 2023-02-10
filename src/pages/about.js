@@ -1,11 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 
 import Layout from '../components/Layout';
 import SEO from '../components/Seo';
 import BrowserWindow from '../components/BrowserWindow';
-import people from '../people.json';
-import volunteers from '../volunteers.json';
 import AboutCTA from '../components/sections/AboutCTA';
 import Gallery from '../components/about/gallery'
 
@@ -61,9 +59,7 @@ export default function About() {
           <h4 className='font-bold my-2'>Financial supporters</h4>
           <p className=''>We are thankful for the generous donations from our supporters.  To see a complete list of donors and learn how you can contribute, visit our page on the <a className='underline' href='https://opencollective.com/openbeta' target='_blank' rel='noopener noreferrer'>Open Collective Foundation</a> website.</p>
           <hr className='my-8'/>
-          <ActiveVolunteers/>
           <People />
-
         </section>
         <section className='layout-wide mx-auto'>
           <Gallery />
@@ -75,8 +71,8 @@ export default function About() {
 }
 
 const name_comparator = (a, b) => {
-  const nameA = a.lname.toUpperCase(); // ignore upper and lowercase
-  const nameB = b.lname.toUpperCase(); // ignore upper and lowercase
+  const nameA = a.name.toUpperCase(); // ignore upper and lowercase
+  const nameB = b.name.toUpperCase(); // ignore upper and lowercase
 
   if (nameA < nameB) {
     return -1;
@@ -87,63 +83,50 @@ const name_comparator = (a, b) => {
   return 0;
 };
 
-const ActiveVolunteers = () => (
-  <>
-    <h4 className='font-bold my-2'>Active Volunteers</h4>
-    <div className="mt-8 grid grid-flow-rows grid-cols-1 md:grid-cols-2  auto-rows-auto gap-x-8 gap-y-8">
-      {volunteers
-        .filter((entry) => entry.active !== 'false')
-        .sort(name_comparator)
-        .map((entry) => (
-          <Profile key={entry.fname + entry.lname} {...entry} />
-        ))}
-    </div>
-    <hr className='my-8'/>
-  </>)
+const People = () => {
+  const contributorsURL = 'https://raw.githubusercontent.com/OpenBeta/open-tacos/develop/.all-contributorsrc';
+  const [people, setPeople] = useState([]);
 
-const People = () => (
-  <>
-    <h4 className='font-bold my-2'>Volunteers & GitHub contributors</h4>
-    <div className="mt-8 grid grid-flow-rows grid-cols-1 md:grid-cols-2  auto-rows-auto gap-x-8 gap-y-8">
-      {people
-        .filter((entry) => entry.active !== 'false')
-        .sort(name_comparator)
-        .map((entry) => (
-          <Profile key={entry.fname + entry.lname} {...entry} />
-        ))}
-    </div>
-    <hr className='my-8'/>
-  </>
-);
+  useEffect(() => {
+    async function fetchContributors() {
+      return await fetch(contributorsURL).then(res => res.json());
+    }
+    setPeople([]);
+    let ignore = false;
+    fetchContributors().then(res => {
+      if (!ignore) {
+        setPeople(res.contributors);
+      }
+    })
+    return () => { ignore = true }
+  }, []);
+
+  return (
+    <>
+      <h4 className='font-bold my-2'>Volunteers</h4>
+      <p>OpenBeta platform is built entirely by volunteer contributors.</p>
+      <div className="mt-8 grid grid-flow-rows grid-cols-1 md:grid-cols-2  auto-rows-auto gap-x-8 gap-y-8">
+        {people
+          .filter((entry) => entry.active !== 'false')
+          .sort(name_comparator)
+          .map((entry) => (
+            <Profile key={entry.avatar_url} {...entry} />
+          ))}
+      </div>
+      <hr className='my-8' />
+    </>
+  )
+};
 
 const Profile = ({
-  fname,
-  lname,
-  academic_title,
-  role,
-  email,
-  linkedin,
-  website,
+  name,
+  profile,
+  contributions,
 }) => (
   <div className="text-base flex flex-col space-y-2">
     <div className="text-lg font-bold">
-      {`${fname} ${lname}${academic_title ? `, ${academic_title}` : ''}`}
+      <a href={profile}>{name ? name : 'Anonymous'}</a>
     </div>
-    <div className="text-sm text-gray-700 uppercase">{role}</div>
-    <a className="text-gray-500 link-default text-sm" href={`mailto:${email}`}>
-      {email}
-    </a>
-    <div className="flex text-sm space-x-4">
-      {website && (
-        <a className="hover:underline" href={website}>
-          Website
-        </a>
-      )}
-      {linkedin && (
-        <a className="hover:underline" href={linkedin}>
-          Linkedin
-        </a>
-      )}
-    </div>
+    <p className="text-sm text-gray-700 uppercase">{contributions.join(', ')}</p>
   </div>
 );
