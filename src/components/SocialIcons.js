@@ -9,10 +9,10 @@ function socialIcons () {
   return (
     <div className="flex xs:justify-center md:justify-end">
       <div className="flex flex-row items-center w-48 justify-between">
-        <a href="https://github.com/OpenBeta"><Github/></a>
-        <a href="https://www.instagram.com/openbetaproject/"><Instagram/></a>
-        <a href="https://twitter.com/OpenBetaHQ"><Twitter/></a>
-        <a href="https://www.linkedin.com/company/openbetacollective/"><LinkedIn/></a>
+        <a href="https://github.com/OpenBeta"><Github role="img" aria-label="OpenBeta on GitHub"/></a>
+        <a href="https://www.instagram.com/openbetaproject/"><Instagram role="img" aria-label="OpenBeta on Instagram"/></a>
+        <a href="https://twitter.com/OpenBetaHQ"><Twitter role="img" aria-label="OpenBeta on Twitter"/></a>
+        <a href="https://www.linkedin.com/company/openbetahq/"><LinkedIn role="img" aria-label="OpenBeta on LinkedIn"/></a>
       </div>
     </div>
   );

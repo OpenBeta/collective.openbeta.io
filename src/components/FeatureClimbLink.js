@@ -1,14 +1,13 @@
 import React from "react";
-import { Link } from 'gatsby';
 import ClimbPin from "../assets/icons/climb-pin.inline.svg";
 
 function headerLogo ({text, link}) {
   return (
-    <Link className="absolute bottom-5 right-0 xs:hidden md:flex" to={link}>
-      <h1 className="openbeta-feature-climb-link flex items-center underline z-50 font-open-sans italic pl-5 pr-20 py-3">
-        <ClimbPin></ClimbPin> <span className="ml-8">{text}</span>
-      </h1>
-    </Link>
+    <a className="absolute bottom-5 right-0 hidden md:flex" href={link}>
+      <div className="openbeta-feature-climb-link flex gap-4 items-center underline z-50 font-open-sans italic px-6  py-3 mr:0 md:mr-24">
+        <ClimbPin/> <span>{text}</span>
+      </div>
+    </a>
   )
 }
 export default headerLogo;
