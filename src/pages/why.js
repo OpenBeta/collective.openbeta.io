@@ -48,10 +48,9 @@ export default function Why() {
                 <br /> open source library
               </div>
               <div className="my-8 text-2xl text-gray-200 font-sans">
-                Build a climbing weather app, make a map of the best 5.7s, study
-                data science, learn Python Pandas, connect with climbers who
-                code, give back to the community. All possible with OpenBeta
-                platform.
+                Build a climbing weather app • plan your next guidebook project • make a map of all the best 5.7s • study
+                data science • learn Python Pandas • connect with climbers who code<br/> <i>All possible with OpenBeta
+                community.</i>
               </div>
             </div>
           </section>

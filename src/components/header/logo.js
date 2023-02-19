@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from 'gatsby';
-import Logo from '../../assets/icons/logo-2022.inline.svg';
 import LogoWithText from "../../assets/icons/logo-text-header.inline.svg";
 
 function headerLogo () {
