@@ -26,9 +26,7 @@ export default function About() {
             <h3 className="text-2xl font-medium">About OpenBeta</h3>
             <p>
               We are a proud nonprofit initiative that enables new and
-              innovative uses of data about rock climbing routes. Just as the
-              Access Fund fights on behalf of climbers to keep public lands open
-              to climbing, OpenBeta is dedicated to providing free and open access to rock climbing data for computer programming, research, and data science endeavors.
+              innovative uses of data about rock climbing routes.  Our mission is to provide free and open access to rock climbing data for computer programming, research, and data science endeavors.
             </p>
             <p>
               We are a collective under the <a href='https://opencollective.com/openbeta' target='_blank' rel='noopener noreferrer'>Open Collective Foundation</a>, a
