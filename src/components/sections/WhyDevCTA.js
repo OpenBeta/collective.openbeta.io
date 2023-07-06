@@ -17,7 +17,7 @@ export default function WhyDevCTA(props) {
       <div className="text-base text-black py-8">
         <a
           className="btn btn-primary bg-custom-blue"
-          href="https://discord.gg/a5HskjmqPc"
+          href="https://discord.gg/w2KpQu2ca5"
         >
           Discord chat server
         </a>
