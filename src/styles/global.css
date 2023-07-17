@@ -236,3 +236,11 @@ input[type="radio"]:checked {
 h3 {
   @apply tracking-tight !important;
 }
+
+.about-gallery {
+  @apply py-2 flex flex-wrap justify-center gap-2;
+}
+
+.about-gallery img {
+  @apply rounded-lg overflow-hidden;
+}
