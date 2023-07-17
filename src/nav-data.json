@@ -32,7 +32,7 @@
         {
             "route": "https://docs.openbeta.io/",
             "title": "Documentation",
-            "description": "How to contribute, technical overview, 2022 roadmap."
+            "description": "How to contribute, technical overview, product roadmap."
         },
         {
             "route": "https://openbeta.substack.com",
