@@ -31,7 +31,7 @@ export default function HowToGetInvolved() {
           <div className="flex flex-1 text-center items-center flex-col xs:pt-20">
             <Three/>
             <div className="font-open-sans text-xl pt-5">
-              <b>Make a donation</b> <br></br>=Support our work to keep climbing information freely available. 
+              <b>Make a donation</b> <br></br>Support our work to keep climbing information freely available. 
             </div>
           </div>
 
