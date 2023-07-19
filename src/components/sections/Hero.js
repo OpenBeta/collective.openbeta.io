@@ -42,7 +42,7 @@ export default function Hero() {
           <div className="mt-8 flex">
             <Link
               className="self-start py-4 px-12 btn btn-link text-center leading-10 bg-openbeta-orange xs:font-medium md:font-normal xs:text-2xl md:text-lg"
-              to="/why"
+              to="/projects"
             >
               Learn more
             </Link>
