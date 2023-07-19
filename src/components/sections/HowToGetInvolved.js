@@ -9,7 +9,7 @@ export default function HowToGetInvolved() {
     <section className="flex bg-openbeta-white">
       <div className='max-w-7xl mx-auto flex flex-col items-center text-openbeta-black mb-20 xs:px-8 md:p-0 w-full'>
         <div className="justify-center mt-14 text-center">
-          <h2 className="text-5xl text-center">3 ways you can get invovled</h2>
+          <h2 className="text-5xl text-center">3 ways you can get involved</h2>
           <h3 className="text-3xl mt-4  text-center font-open-sans"> OpenBeta is an open source project, and you can help!</h3>
         </div>
 
@@ -17,21 +17,21 @@ export default function HowToGetInvolved() {
           <div className="flex flex-1 text-center items-center flex-col xs:pt-20">
             <One/>
             <div className="font-open-sans text-xl pt-5">
-              <b>Give a helping hand!</b> <br></br> Help develop the platform itself
+              <b>Give a helping hand</b> <br></br> Help develop the platform itself.
             </div>
           </div>
 
           <div className="flex flex-1 text-center items-center flex-col xs:pt-20">
             <Two/>
             <div className="font-open-sans text-xl pt-5">
-              <b>Don't be shy!</b> <br></br> Use the climbing dataset
+              <b>Build your own</b> <br></br>Use the climbing dataset in your projects.
             </div>
           </div>
 
           <div className="flex flex-1 text-center items-center flex-col xs:pt-20">
             <Three/>
             <div className="font-open-sans text-xl pt-5">
-              <b>Join the conversation!</b> <br></br> Be part of Discord community
+              <b>Make a donation</b> <br></br>=Support our work to keep climbing information freely available. 
             </div>
           </div>
 
