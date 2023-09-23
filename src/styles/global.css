@@ -226,7 +226,7 @@ input[type="radio"]:checked {
 }
 
 .text-testimonials {
-  font-size: 1.375rem;
+  @apply text-lg font-open-sans;
 }
 
 .leading-blog-article-title {
