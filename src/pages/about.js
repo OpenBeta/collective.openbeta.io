@@ -56,6 +56,61 @@ export default function About() {
           <hr className='my-8'/>
           <h4 className='font-bold my-2'>Financial supporters</h4>
           <p className=''>We are thankful for the generous donations from our supporters.  To see a complete list of donors and learn how you can contribute, visit our page on the <a className='underline' href='https://opencollective.com/openbeta' target='_blank' rel='noopener noreferrer'>Open Collective Foundation</a> website.</p>
+
+          <hr className='my-8'/>
+          <PeopleSection
+            headingText='Strategy and Governance Working Group'
+            desc=""
+            peopleList={[
+              {
+                name: 'Viet Nguyen',
+                website: 'https://www.linkedin.com/in/viethnguyen/',
+              },
+              {
+                name: 'Larissa Zhou',
+                website: 'https://www.linkedin.com/in/larissazhou/'
+              },
+              {
+                name: 'Victoria Dower',
+                website: 'https://www.linkedin.com/in/vdower'
+              },
+              {
+                name: 'Blake McCord',
+                website: 'https://www.blakemccordmedia.com/'
+              },
+              {
+                name: 'Minh Nguyen',
+                website: 'https://www.openstreetmap.org/user/Minh%20Nguyen'
+              },
+            ]}
+          />
+
+          <hr className='my-8'/>
+
+          <PeopleSection
+            headingText='Engineering & Marketing'
+            desc=""
+            peopleList={[
+              {
+                name: 'Viet Nguyen',
+                website: 'https://www.linkedin.com/in/viethnguyen/',
+                roles: ['Project Maintainer']
+              }, {
+                name: 'Nathan Musoke',
+                website: "http://nathan.musoke.ca/",
+                roles: ['Project Maintainer']
+              }, {
+                name: "Iacami Gevaerd",
+                website: "https://github.com/enapupe",
+                roles: ['DevOps']
+              }, {
+                name: "Emily Graham",
+                website: "https://www.linkedin.com/in/emily-graham-02b039235/",
+                roles: ['Social Media Manager']
+              }
+            ]}
+          />
+
           <hr className='my-8'/>
           <People />
         </section>
@@ -107,8 +162,8 @@ const People = () => {
         {people
           .filter((entry) => entry.active !== 'false')
           .sort(name_comparator)
-          .map((entry) => (
-            <Profile key={entry.avatar_url} {...entry} />
+          .map(({ name, avatar_url, contributions, profile }) => (
+            <Profile key={avatar_url} name={name} roles={contributions} website={profile}/>
           ))}
       </div>
       <hr className='my-8' />
@@ -116,15 +171,30 @@ const People = () => {
   )
 };
 
+const PeopleSection = ({ headingText, desc, peopleList }) => (
+  <>
+    <h4 className='font-bold my-2'>{headingText}</h4>
+    <p>{desc}</p>
+    <div className="mt-8 flex flex-col md:flex-row flex-wrap gap-x-24 gap-y-6">
+      {peopleList
+        .filter((entry) => entry.active !== 'false')
+        .sort(name_comparator)
+        .map(({ name, website, roles }) => (
+          <Profile key={website} name={name} website={website} roles={roles} />
+        ))}
+      </div>
+  </>
+)
+
 const Profile = ({
   name,
-  profile,
-  contributions,
+  website,
+  roles = [],
 }) => (
-  <div className="text-base flex flex-col space-y-2">
-    <div className="text-lg font-bold capitalize">
-      <a href={profile}>{name ? name : 'Anonymous'}</a>
+  <div className="text-base">
+    <div className="text-lg font-medium capitalize underline underline-offset-4 decoration-gray-400 ">
+      <a href={website} className='no-underline'>{name ? name : 'Anonymous'}</a>
     </div>
-    <p className="text-sm text-gray-700 uppercase">{contributions.join(', ')}</p>
+    <div className="text-sm text-gray-700 uppercase">{roles.join(', ')}</div>
   </div>
 );
