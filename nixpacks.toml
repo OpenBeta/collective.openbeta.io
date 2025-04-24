@@ -8,7 +8,7 @@ cmds = ["yarn install --no-progress --silent"]
 cmds = ["yarn build"]
 
 [start]
-cmd = "yarn serve"
+cmd = ["yarn serve -h 0.0.0.0"]
 
 [variables]
 NODE_ENV = 'production'
