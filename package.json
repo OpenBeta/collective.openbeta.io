@@ -61,5 +61,8 @@
   },
   "bugs": {
     "url": "https://github.com/OpenBeta/open-tacos/issues"
+  },
+  "engines": {
+    "node": "20"
   }
 }
